@@ -208,3 +208,12 @@ footer a{color:var(--muted)}
   .dl-marker{left:-6px}
   .dl-sep{display:none}
 }
+
+/* secção "checks" com 3 cartões; o terceiro em destaque com as cores da marca */
+.checks.checks-3{grid-template-columns:repeat(3,1fr)}
+.check-group.highlight{background:var(--night);border-color:var(--night);color:#DCE3FA}
+.check-group.highlight h3{color:var(--lamp-soft)}
+.check-group.highlight > p{color:#B9C3E6}
+.check-group.highlight li::marker{color:var(--lamp)}
+@media (max-width:1000px){.checks.checks-3{grid-template-columns:1fr 1fr}.check-group.highlight{grid-column:1 / -1}}
+@media (max-width:700px){.checks.checks-3{grid-template-columns:1fr}}
