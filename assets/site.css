@@ -1,3 +1,6 @@
+/* Fontes alojadas no próprio site (licença SIL Open Font License): sem pedidos à Google. */
+@font-face{font-family:'Nunito';font-style:normal;font-weight:800 900;font-display:swap;src:url('/assets/fonts/nunito-latin.woff2') format('woff2')}
+@font-face{font-family:'Nunito Sans';font-style:normal;font-weight:400 700;font-display:swap;src:url('/assets/fonts/nunito-sans-latin.woff2') format('woff2')}
 /* MerchLight — site institucional */
 :root{
   --night:#14213D; --indigo:#3D55E0; --indigo-deep:#25348A; --lamp:#F0A21E; --lamp-soft:#FFD978;
@@ -217,3 +220,14 @@ footer a{color:var(--muted)}
 .check-group.highlight li::marker{color:var(--lamp)}
 @media (max-width:1000px){.checks.checks-3{grid-template-columns:1fr 1fr}.check-group.highlight{grid-column:1 / -1}}
 @media (max-width:700px){.checks.checks-3{grid-template-columns:1fr}}
+
+/* painel de exemplo no topo da página inicial */
+.score strong small{font-size:.55em;color:var(--muted);font-weight:800}
+.report-note{margin:14px 0 0;font-size:.82rem;color:var(--muted)}
+.report-note a{color:var(--indigo);font-weight:700}
+
+/* página 404 */
+.notfound{text-align:center;padding:90px 0 120px}
+.notfound h1{font-family:var(--display);font-weight:900;font-size:clamp(2rem,4.5vw,3rem);color:var(--night);margin:18px 0 10px}
+.notfound p{color:var(--muted);margin:0 0 26px}
+.notfound .actions{justify-content:center}
