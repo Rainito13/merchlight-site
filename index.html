@@ -44,18 +44,28 @@
           <rect x="-7" y="17" width="14" height="4" rx="2" fill="#F0A21E"/><rect x="-5" y="22.5" width="10" height="3.5" rx="1.75" fill="#F0A21E"/>
         </svg>
         <div class="report">
-          <h2>Today's store health</h2>
-          <div class="scores">
-            <div class="score"><span>Overall</span><strong>62<small> / 100</small></strong><br><span class="pill warn">Needs attention</span></div>
-            <div class="score"><span>Store</span><strong>72<small> / 100</small></strong><br><span class="pill warn">Needs attention</span></div>
-            <div class="score"><span>Google Merchant</span><strong>47<small> / 100</small></strong><br><span class="pill bad">At risk</span></div>
+          <div class="rp-head">
+            <h2>Store health</h2>
+            <span class="rp-chip"><svg width="30" height="38" viewBox="0 0 200 250" role="img" aria-label="MerchLight Bronze trophy"><defs><linearGradient id="b-bronzeh" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7E4A1C"/><stop offset=".35" stop-color="#F2BE8A"/><stop offset=".6" stop-color="#CD7F32"/><stop offset="1" stop-color="#7E4A1C"/></linearGradient><linearGradient id="r-bronzeh" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F2BE8A"/><stop offset="1" stop-color="#CD7F32"/></linearGradient></defs><ellipse cx="100" cy="242" rx="72" ry="6" fill="#1A1D29" fill-opacity=".12"/><path d="M44 48 C10 48 12 104 56 110" fill="none" stroke="url(#b-bronzeh)" stroke-width="10" stroke-linecap="round"/><path d="M156 48 C190 48 188 104 144 110" fill="none" stroke="url(#b-bronzeh)" stroke-width="10" stroke-linecap="round"/><path d="M38 30 H162 V66 C162 112 134 140 100 140 C66 140 38 112 38 66 Z" fill="url(#b-bronzeh)"/><ellipse cx="100" cy="30" rx="62" ry="9" fill="url(#r-bronzeh)" stroke="#7E4A1C" stroke-opacity=".35"/><path d="M54 40 C52 80 62 110 80 126" stroke="#fff" stroke-opacity=".45" stroke-width="7" fill="none" stroke-linecap="round"/><circle cx="100" cy="80" r="26" fill="#7E4A1C" fill-opacity=".25" stroke="#FFE1C2" stroke-opacity=".8" stroke-width="2"/><path d="M0 -15 C9 -15 15 -8 15 0 C15 6 11 9 9 11 C8 12 7.5 13.5 7.5 15 H-7.5 C-7.5 13.5 -8 12 -9 11 C-11 9 -15 6 -15 0 C-15 -8 -9 -15 0 -15 Z" transform="translate(100 78) scale(.85)" fill="#FFE1C2"/><rect x="93.5" y="91" width="13" height="3.4" rx="1.7" fill="#FFE1C2"/><rect x="95.5" y="96" width="9" height="3" rx="1.5" fill="#FFE1C2"/><rect x="91" y="140" width="18" height="22" fill="url(#b-bronzeh)"/><ellipse cx="100" cy="150" rx="16" ry="5" fill="url(#r-bronzeh)"/><path d="M66 162 H134 L142 186 H58 Z" fill="url(#b-bronzeh)"/><rect x="40" y="186" width="120" height="50" rx="6" fill="#fff" stroke="#1E2C78" stroke-opacity=".15"/><rect x="44" y="190" width="112" height="42" rx="4" fill="none" stroke="#CD7F32" stroke-width="1.5"/><image href="/assets/merchlight-wordmark.svg" x="47" y="190" width="106" height="27"/><text x="100" y="229" text-anchor="middle" font-family="Nunito, sans-serif" font-weight="800" font-size="7" letter-spacing="2" fill="#7E4A1C">BRONZE</text></svg><span><small>Your level</small><b>Bronze</b></span></span>
           </div>
-          <div class="issue"><b>Products disapproved by Google</b><em>3 products</em></div>
-          <div class="issue"><b>A best-seller is out of stock</b><em>£1,240 last 30 days</em></div>
-          <div class="issue"><b>Paid orders waiting to ship</b><em>3 orders</em></div>
-          <div class="issue"><b>Variants without a SKU</b><em>18 variants</em></div>
+          <div class="rp-score">
+            <svg width="58" height="58" viewBox="-32 -32 64 64" aria-hidden="true"><defs><linearGradient id="lp6258" x1="0" y1="1" x2="0" y2="0"><stop offset="0.62" stop-color="#F0A21E"/><stop offset="0.62" stop-color="#DDE0E7"/></linearGradient></defs><path d="M0 -15 C9 -15 15 -8 15 0 C15 6 11 9 9 11 C8 12 7.5 13.5 7.5 15 H-7.5 C-7.5 13.5 -8 12 -9 11 C-11 9 -15 6 -15 0 C-15 -8 -9 -15 0 -15 Z" fill="url(#lp6258)"/><rect x="-7" y="17" width="14" height="4" rx="2" fill="#8C92A0"/><rect x="-5" y="22.5" width="10" height="3.5" rx="1.75" fill="#8C92A0"/></svg>
+            <div><strong>62<small> / 100</small></strong><span class="rp-msg">Getting brighter — a few bulbs to change.</span></div>
+          </div>
+          <div class="rp-prio-head"><b>Your top priorities</b><em>+38 points left</em></div>
+          <div class="issue"><b>Change 3 Merchant Center settings</b><em class="pts">+10</em></div>
+          <div class="issue"><b>Fix 7 types of disapproved products</b><em class="pts">+8</em></div>
+          <div class="issue"><b>Ship 3 paid orders</b><em class="pts">+7</em></div>
+          <div class="issue"><b>Restock your best-seller</b><em class="pts">+4</em></div>
           <p class="report-note">Example data · <a href="/demo/">See the full dashboard</a></p>
         </div>
+      </div>
+    </section>
+
+    <section id="what" aria-labelledby="what-title">
+      <div class="what">
+        <h2 id="what-title">What MerchLight does</h2>
+        <p>MerchLight is a Shopify app that checks your store and your Google Merchant Center automatically for problems that cost you sales — products out of stock, orders waiting to ship, missing SKUs and images, and products Google has disapproved. It gives your store a health score from 0 to 100, ranks every problem by its impact, and explains exactly what to change. MerchLight only reads your data: you make every change yourself, in Shopify or Google.</p>
       </div>
     </section>
 
@@ -93,10 +103,11 @@
           <p>Everything in one place, ranked by what it costs you.</p>
           <ul>
             <li>One health score from 0 to 100 that lights up as your store improves</li>
+            <li>Points for every issue — resolve them all and you reach 100</li>
+            <li>“Your next best move”: the most points for the least effort</li>
             <li>Sales at risk shown in money, based on your real sales</li>
             <li>Clear steps for every issue — you stay in control of every change</li>
-            <li>Automatic scans that confirm what you resolved and catch anything new</li>
-            <li>Ignore with a safety net: resolved issues come back if they're still there after 7 days</li>
+            <li>Trophies as your store stays healthy: Bronze, Silver, Gold and Diamond</li>
             <li>Read-only and private: no customer names, emails or addresses</li>
           </ul>
         </div>
@@ -108,11 +119,48 @@
         <h2 id="how-title">How it works</h2>
         <p>Set up in a few minutes. No code, no changes to your theme.</p>
       </div>
-      <ol class="steps">
-        <li><h3>Install and connect</h3><p>Add MerchLight to your Shopify store and, if you sell on Google, connect Merchant Center.</p></li>
-        <li><h3>Get your health score</h3><p>One scan gives you a score for your store and for Google, with every problem ranked by what it costs you.</p></li>
-        <li><h3>Resolve and watch it improve</h3><p>Each problem tells you what to change and how. Automatic scans confirm what you resolved and catch anything new.</p></li>
+      <ol class="steps steps-4">
+        <li><h3>Install and run your first scan</h3><p>Add MerchLight to your Shopify store. Your first scan gives you a health score from 0 to 100 — and your first trophy, Bronze.</p></li>
+        <li><h3>Connect Google, if you sell there</h3><p>Optionally connect Google Merchant Center to see which products Google has disapproved or limited, and why.</p></li>
+        <li><h3>Follow your priorities</h3><p>Start with your next best move. Every issue shows its points, its impact and how long it takes, with clear steps to resolve it.</p></li>
+        <li><h3>Watch your store light up</h3><p>Automatic scans confirm what you resolved and catch anything new. Your score rises, the bulbs light up and you earn new trophies.</p></li>
       </ol>
+    </section>
+
+    <section id="trophies" aria-labelledby="trophies-title">
+      <div class="sec-head">
+        <h2 id="trophies-title">Earn the MerchLight trophies</h2>
+        <p>A healthy store over time earns a better cup. Trophies are never taken away.</p>
+      </div>
+      <div class="cups">
+        <div class="cup"><svg width="120" height="150" viewBox="0 0 200 250" role="img" aria-label="MerchLight Bronze trophy"><defs><linearGradient id="b-bronzet" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7E4A1C"/><stop offset=".35" stop-color="#F2BE8A"/><stop offset=".6" stop-color="#CD7F32"/><stop offset="1" stop-color="#7E4A1C"/></linearGradient><linearGradient id="r-bronzet" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F2BE8A"/><stop offset="1" stop-color="#CD7F32"/></linearGradient></defs><ellipse cx="100" cy="242" rx="72" ry="6" fill="#1A1D29" fill-opacity=".12"/><path d="M44 48 C10 48 12 104 56 110" fill="none" stroke="url(#b-bronzet)" stroke-width="10" stroke-linecap="round"/><path d="M156 48 C190 48 188 104 144 110" fill="none" stroke="url(#b-bronzet)" stroke-width="10" stroke-linecap="round"/><path d="M38 30 H162 V66 C162 112 134 140 100 140 C66 140 38 112 38 66 Z" fill="url(#b-bronzet)"/><ellipse cx="100" cy="30" rx="62" ry="9" fill="url(#r-bronzet)" stroke="#7E4A1C" stroke-opacity=".35"/><path d="M54 40 C52 80 62 110 80 126" stroke="#fff" stroke-opacity=".45" stroke-width="7" fill="none" stroke-linecap="round"/><circle cx="100" cy="80" r="26" fill="#7E4A1C" fill-opacity=".25" stroke="#FFE1C2" stroke-opacity=".8" stroke-width="2"/><path d="M0 -15 C9 -15 15 -8 15 0 C15 6 11 9 9 11 C8 12 7.5 13.5 7.5 15 H-7.5 C-7.5 13.5 -8 12 -9 11 C-11 9 -15 6 -15 0 C-15 -8 -9 -15 0 -15 Z" transform="translate(100 78) scale(.85)" fill="#FFE1C2"/><rect x="93.5" y="91" width="13" height="3.4" rx="1.7" fill="#FFE1C2"/><rect x="95.5" y="96" width="9" height="3" rx="1.5" fill="#FFE1C2"/><rect x="91" y="140" width="18" height="22" fill="url(#b-bronzet)"/><ellipse cx="100" cy="150" rx="16" ry="5" fill="url(#r-bronzet)"/><path d="M66 162 H134 L142 186 H58 Z" fill="url(#b-bronzet)"/><rect x="40" y="186" width="120" height="50" rx="6" fill="#fff" stroke="#1E2C78" stroke-opacity=".15"/><rect x="44" y="190" width="112" height="42" rx="4" fill="none" stroke="#CD7F32" stroke-width="1.5"/><image href="/assets/merchlight-wordmark.svg" x="47" y="190" width="106" height="27"/><text x="100" y="229" text-anchor="middle" font-family="Nunito, sans-serif" font-weight="800" font-size="7" letter-spacing="2" fill="#7E4A1C">BRONZE</text></svg><b>Bronze</b><span>Your first scan</span></div>
+        <div class="cup"><svg width="120" height="150" viewBox="0 0 200 250" role="img" aria-label="MerchLight Silver trophy"><defs><linearGradient id="b-silvert" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7D8590"/><stop offset=".35" stop-color="#FFFFFF"/><stop offset=".6" stop-color="#C3C9D2"/><stop offset="1" stop-color="#7D8590"/></linearGradient><linearGradient id="r-silvert" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#C3C9D2"/></linearGradient></defs><ellipse cx="100" cy="242" rx="72" ry="6" fill="#1A1D29" fill-opacity=".12"/><path d="M44 48 C10 48 12 104 56 110" fill="none" stroke="url(#b-silvert)" stroke-width="10" stroke-linecap="round"/><path d="M156 48 C190 48 188 104 144 110" fill="none" stroke="url(#b-silvert)" stroke-width="10" stroke-linecap="round"/><path d="M38 30 H162 V66 C162 112 134 140 100 140 C66 140 38 112 38 66 Z" fill="url(#b-silvert)"/><ellipse cx="100" cy="30" rx="62" ry="9" fill="url(#r-silvert)" stroke="#7D8590" stroke-opacity=".35"/><path d="M54 40 C52 80 62 110 80 126" stroke="#fff" stroke-opacity=".45" stroke-width="7" fill="none" stroke-linecap="round"/><circle cx="100" cy="80" r="26" fill="#7D8590" fill-opacity=".25" stroke="#FFFFFF" stroke-opacity=".8" stroke-width="2"/><path d="M0 -15 C9 -15 15 -8 15 0 C15 6 11 9 9 11 C8 12 7.5 13.5 7.5 15 H-7.5 C-7.5 13.5 -8 12 -9 11 C-11 9 -15 6 -15 0 C-15 -8 -9 -15 0 -15 Z" transform="translate(100 78) scale(.85)" fill="#FFFFFF"/><rect x="93.5" y="91" width="13" height="3.4" rx="1.7" fill="#FFFFFF"/><rect x="95.5" y="96" width="9" height="3" rx="1.5" fill="#FFFFFF"/><rect x="91" y="140" width="18" height="22" fill="url(#b-silvert)"/><ellipse cx="100" cy="150" rx="16" ry="5" fill="url(#r-silvert)"/><path d="M66 162 H134 L142 186 H58 Z" fill="url(#b-silvert)"/><rect x="40" y="186" width="120" height="50" rx="6" fill="#fff" stroke="#1E2C78" stroke-opacity=".15"/><rect x="44" y="190" width="112" height="42" rx="4" fill="none" stroke="#C3C9D2" stroke-width="1.5"/><image href="/assets/merchlight-wordmark.svg" x="47" y="190" width="106" height="27"/><text x="100" y="229" text-anchor="middle" font-family="Nunito, sans-serif" font-weight="800" font-size="7" letter-spacing="2" fill="#5B636E">SILVER</text></svg><b>Silver</b><span>Score 70+ for 14 days</span></div>
+        <div class="cup"><svg width="120" height="150" viewBox="0 0 200 250" role="img" aria-label="MerchLight Gold trophy"><defs><linearGradient id="b-goldt" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#A86A0C"/><stop offset=".35" stop-color="#FFE7A3"/><stop offset=".6" stop-color="#F0A21E"/><stop offset="1" stop-color="#A86A0C"/></linearGradient><linearGradient id="r-goldt" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFE7A3"/><stop offset="1" stop-color="#F0A21E"/></linearGradient></defs><ellipse cx="100" cy="242" rx="72" ry="6" fill="#1A1D29" fill-opacity=".12"/><path d="M44 48 C10 48 12 104 56 110" fill="none" stroke="url(#b-goldt)" stroke-width="10" stroke-linecap="round"/><path d="M156 48 C190 48 188 104 144 110" fill="none" stroke="url(#b-goldt)" stroke-width="10" stroke-linecap="round"/><path d="M38 30 H162 V66 C162 112 134 140 100 140 C66 140 38 112 38 66 Z" fill="url(#b-goldt)"/><ellipse cx="100" cy="30" rx="62" ry="9" fill="url(#r-goldt)" stroke="#A86A0C" stroke-opacity=".35"/><path d="M54 40 C52 80 62 110 80 126" stroke="#fff" stroke-opacity=".45" stroke-width="7" fill="none" stroke-linecap="round"/><circle cx="100" cy="80" r="26" fill="#A86A0C" fill-opacity=".25" stroke="#FFF6DC" stroke-opacity=".8" stroke-width="2"/><path d="M0 -24 V-30 M-17 -17 L-21 -21 M17 -17 L21 -21 M-23 -1 H-29 M23 -1 H29" transform="translate(100 78) scale(.62)" stroke="#FFF6DC" stroke-width="4" stroke-linecap="round" fill="none"/><path d="M0 -15 C9 -15 15 -8 15 0 C15 6 11 9 9 11 C8 12 7.5 13.5 7.5 15 H-7.5 C-7.5 13.5 -8 12 -9 11 C-11 9 -15 6 -15 0 C-15 -8 -9 -15 0 -15 Z" transform="translate(100 78) scale(.85)" fill="#FFF6DC"/><rect x="93.5" y="91" width="13" height="3.4" rx="1.7" fill="#FFF6DC"/><rect x="95.5" y="96" width="9" height="3" rx="1.5" fill="#FFF6DC"/><rect x="91" y="140" width="18" height="22" fill="url(#b-goldt)"/><ellipse cx="100" cy="150" rx="16" ry="5" fill="url(#r-goldt)"/><path d="M66 162 H134 L142 186 H58 Z" fill="url(#b-goldt)"/><rect x="40" y="186" width="120" height="50" rx="6" fill="#fff" stroke="#1E2C78" stroke-opacity=".15"/><rect x="44" y="190" width="112" height="42" rx="4" fill="none" stroke="#F0A21E" stroke-width="1.5"/><image href="/assets/merchlight-wordmark.svg" x="47" y="190" width="106" height="27"/><text x="100" y="229" text-anchor="middle" font-family="Nunito, sans-serif" font-weight="800" font-size="7" letter-spacing="2" fill="#A86A0C">GOLD</text></svg><b>Gold</b><span>Score 80+ for 30 days</span></div>
+        <div class="cup"><svg width="120" height="150" viewBox="0 0 200 250" role="img" aria-label="MerchLight Diamond trophy"><defs><linearGradient id="b-diamondt" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#3A9CC8"/><stop offset=".35" stop-color="#F2FDFF"/><stop offset=".6" stop-color="#9FE6FF"/><stop offset="1" stop-color="#3A9CC8"/></linearGradient><linearGradient id="r-diamondt" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F2FDFF"/><stop offset="1" stop-color="#9FE6FF"/></linearGradient></defs><ellipse cx="100" cy="242" rx="72" ry="6" fill="#1A1D29" fill-opacity=".12"/><path d="M44 48 C10 48 12 104 56 110" fill="none" stroke="url(#b-diamondt)" stroke-width="10" stroke-linecap="round"/><path d="M156 48 C190 48 188 104 144 110" fill="none" stroke="url(#b-diamondt)" stroke-width="10" stroke-linecap="round"/><path d="M38 30 H162 V66 C162 112 134 140 100 140 C66 140 38 112 38 66 Z" fill="url(#b-diamondt)"/><ellipse cx="100" cy="30" rx="62" ry="9" fill="url(#r-diamondt)" stroke="#3A9CC8" stroke-opacity=".35"/><path d="M54 40 C52 80 62 110 80 126" stroke="#fff" stroke-opacity=".45" stroke-width="7" fill="none" stroke-linecap="round"/><path d="M60 34 L82 120 M100 34 L100 138 M140 34 L118 120 M44 70 L156 70" stroke="#fff" stroke-opacity=".55" stroke-width="1.5" fill="none"/><path d="M150 18 l3 7 7 3 -7 3 -3 7 -3 -7 -7 -3 7 -3z M34 112 l2 5 5 2 -5 2 -2 5 -2 -5 -5 -2 5 -2z" fill="#fff"/><circle cx="100" cy="80" r="26" fill="#3A9CC8" fill-opacity=".25" stroke="#FFFFFF" stroke-opacity=".8" stroke-width="2"/><path d="M0 -24 V-30 M-17 -17 L-21 -21 M17 -17 L21 -21 M-23 -1 H-29 M23 -1 H29" transform="translate(100 78) scale(.62)" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" fill="none"/><path d="M0 -15 C9 -15 15 -8 15 0 C15 6 11 9 9 11 C8 12 7.5 13.5 7.5 15 H-7.5 C-7.5 13.5 -8 12 -9 11 C-11 9 -15 6 -15 0 C-15 -8 -9 -15 0 -15 Z" transform="translate(100 78) scale(.85)" fill="#FFFFFF"/><rect x="93.5" y="91" width="13" height="3.4" rx="1.7" fill="#FFFFFF"/><rect x="95.5" y="96" width="9" height="3" rx="1.5" fill="#FFFFFF"/><rect x="91" y="140" width="18" height="22" fill="url(#b-diamondt)"/><ellipse cx="100" cy="150" rx="16" ry="5" fill="url(#r-diamondt)"/><path d="M66 162 H134 L142 186 H58 Z" fill="url(#b-diamondt)"/><rect x="40" y="186" width="120" height="50" rx="6" fill="#fff" stroke="#1E2C78" stroke-opacity=".15"/><rect x="44" y="190" width="112" height="42" rx="4" fill="none" stroke="#9FE6FF" stroke-width="1.5"/><image href="/assets/merchlight-wordmark.svg" x="47" y="190" width="106" height="27"/><text x="100" y="229" text-anchor="middle" font-family="Nunito, sans-serif" font-weight="800" font-size="7" letter-spacing="2" fill="#1C6E93">DIAMOND</text></svg><b>Diamond</b><span>Score 95+ for 90 days</span></div>
+      </div>
+    </section>
+
+    <section id="google-data" aria-labelledby="google-data-title">
+      <div class="checks checks-2">
+        <div class="check-group">
+          <h3 id="google-data-title">How MerchLight uses Google data</h3>
+          <p>Only if you choose to connect Google Merchant Center.</p>
+          <ul>
+            <li>MerchLight reads the status of your products and account in Merchant Center: which products are disapproved or limited, where, and why.</li>
+            <li>It uses this only to show you those problems inside the app, with guidance, a Google score and an optional CSV export.</li>
+            <li>It is read-only: it never creates, changes or deletes anything in your Merchant Center account.</li>
+          </ul>
+        </div>
+        <div class="check-group">
+          <h3>Your data stays yours</h3>
+          <p>We follow the Google API Services User Data Policy, including the Limited Use requirements.</p>
+          <ul>
+            <li>Google data is never sold, never used for advertising and never shared with third parties.</li>
+            <li>You can disconnect Google at any time from the app.</li>
+            <li>Read the full details in our <a href="/privacy/">privacy policy</a>.</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <section aria-labelledby="trust-title">
