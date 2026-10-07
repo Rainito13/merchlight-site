@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy policy — MerchLight</title>
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="canonical" href="https://merchlight.com/privacy/">
 <link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
@@ -21,9 +22,9 @@
 </div>
 <main class="legal">
 <h1>Privacy policy</h1>
-<p class="updated">Last updated: 5 October 2026</p>
+<p class="updated">Last updated: 6 October 2026</p>
 
-<p>MerchLight is a Shopify app that scans a merchant's store and, if the merchant chooses, their Google Merchant Center and Google Ads accounts, to find problems that affect sales. This policy explains what data MerchLight uses, why, and the choices you have.</p>
+<p>MerchLight is a Shopify app that scans a merchant's store and, if the merchant chooses, their Google Merchant Center, Google Ads and Meta Ads accounts, to find problems that affect sales. This policy explains what data MerchLight uses, why, and the choices you have.</p>
 
 <h2>Who we are</h2>
 <p>MerchLight is operated by Paulo Lopes, London, United Kingdom ("MerchLight", "we", "us"). We are the data controller for the information described in this policy. For any privacy question or request, email <a href="mailto:privacy@merchlight.com">privacy@merchlight.com</a>.</p>
@@ -34,7 +35,7 @@
 <ul>
   <li><strong>Store details:</strong> your store's domain, the access token Shopify issues to the app, and the store owner's first name, so the app can greet you.</li>
   <li><strong>Products and inventory:</strong> product titles, status, variants, SKUs, whether a product has an image, and stock levels.</li>
-  <li><strong>Orders (last 60 days):</strong> order number, dates, totals, payment and fulfilment status, the products in each order and whether a shipment has tracking.</li>
+  <li><strong>Orders (last 60 days):</strong> order number, dates, totals, payment and fulfilment status, the products in each order and whether a shipment has tracking. Shopify only gives apps access to the last 60 days of orders, so MerchLight never reads older orders.</li>
   <li><strong>Sales figures:</strong> sales totals per product for the last 30 days, calculated from your orders, to show your best-seller and the sales at risk.</li>
   <li><strong>Your choices in the app:</strong> issues you mark as ignored or as in progress, your answers to the app's setup questions (for example, whether you sell in physical stores and how you fulfil orders), your feedback on suggestions, when you last opened the app, and the trophies your store has earned.</li>
 </ul>
@@ -54,9 +55,19 @@
 <ul>
   <li>An access token to read your Google Ads data, stored encrypted.</li>
   <li>The ID, name and currency of the Google Ads account you choose, and of the manager account it is accessed through, if any.</li>
-  <li>Campaign performance figures: the number of active campaigns, and spend, clicks, conversions and conversion value for today, the last 7 days and the last 30 days.</li>
+  <li>Campaign information: campaign names, status and daily budgets, and spend, clicks, conversions and conversion value for the periods you choose to view.</li>
 </ul>
 <p>We do not read your ad texts, keywords, audiences, billing details or any information about the people who saw or clicked your ads.</p>
+
+<h3>From Meta Ads (optional)</h3>
+<p>If you choose to connect Meta Ads (Facebook and Instagram ads), we receive, with your permission through Facebook Login for Business, read-only access (the <code>ads_read</code> permission) to:</p>
+<ul>
+  <li>An access token to read your ad account data, stored encrypted. Meta tokens expire after about 60 days, after which MerchLight asks you to reconnect.</li>
+  <li>Your Facebook user ID for this app, used only to keep the connection working.</li>
+  <li>The ID, name and currency of the ad account you choose.</li>
+  <li>Campaign information: campaign names, status and daily budgets, and spend, clicks, purchases and purchase value for the periods you choose to view.</li>
+</ul>
+<p>We do not read your ad creatives, audiences, billing details, Pages, messages or any information about the people who saw or clicked your ads.</p>
 
 <h3>Information you send us</h3>
 <p>If you email us, we keep the message and your email address to reply and help you.</p>
@@ -64,7 +75,7 @@
 <h2>How we use information</h2>
 <ul>
   <li>To run scans, calculate your store health score and show you the problems found.</li>
-  <li>To show your Google Ads campaign figures next to your store data, if you connect Google Ads.</li>
+  <li>To show your Google Ads and Meta Ads campaign figures next to your store data, if you connect them.</li>
   <li>To compare scans over time and run automatic scheduled scans.</li>
   <li>To keep the service secure and fix errors.</li>
   <li>To answer your support requests.</li>
@@ -74,14 +85,18 @@
 <h2>Google user data</h2>
 <p>MerchLight's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. We only read Merchant Center and Google Ads data to show you the status of your products, account and campaigns inside MerchLight. We never change your Merchant Center or Google Ads data. We do not sell this data, transfer it to anyone else, use it for advertising, or use it to train AI or machine learning models. No person at MerchLight reads it unless you ask us to for support, it is needed for security, or the law requires it.</p>
 
+<h2>Meta platform data</h2>
+<p>MerchLight uses data from Meta's platform in line with the <a href="https://developers.facebook.com/terms/">Meta Platform Terms</a> and <a href="https://developers.facebook.com/devpolicy/">Developer Policies</a>. We only read your ad account data to show you your campaigns, spend, purchases and return on ad spend inside MerchLight. We never create, change or pause your ads. We do not sell this data, share it with anyone else, use it for advertising, or use it to train AI or machine learning models. No person at MerchLight reads it unless you ask us to for support, it is needed for security, or the law requires it.</p>
+
 <h2>Legal basis (UK and EU GDPR)</h2>
-<p>We process this information to provide the service you installed (performance of a contract) and, for security and service improvement, on the basis of our legitimate interests. Connecting Google Merchant Center or Google Ads is your choice, and you can disconnect either at any time.</p>
+<p>We process this information to provide the service you installed (performance of a contract) and, for security and service improvement, on the basis of our legitimate interests. Connecting Google Merchant Center, Google Ads or Meta Ads is your choice, and you can disconnect any of them at any time.</p>
 
 <h2>Service providers</h2>
 <table>
   <tr><th>Provider</th><th>Purpose</th></tr>
   <tr><td>Shopify</td><td>App platform and access to your store data</td></tr>
   <tr><td>Google</td><td>Merchant Center and Google Ads data, only if you connect them</td></tr>
+  <tr><td>Meta</td><td>Meta Ads data (Facebook and Instagram ads), only if you connect it</td></tr>
   <tr><td>Railway</td><td>Hosting of the MerchLight servers and database</td></tr>
   <tr><td>Squarespace</td><td>Domain and forwarding of support emails</td></tr>
   <tr><td>GitHub</td><td>Hosting of this website (merchlight.com)</td></tr>
@@ -90,16 +105,26 @@
 
 <h2>How long we keep information</h2>
 <ul>
-  <li><strong>Google connections:</strong> deleted as soon as you disconnect Merchant Center or Google Ads, or uninstall MerchLight. You can also remove MerchLight's access at any time from your Google Account, under Security, "Third-party apps with account access".</li>
-  <li><strong>Google Ads figures:</strong> we keep only the latest figures, refreshed at most every 30 minutes, and delete them when you disconnect Google Ads.</li>
+  <li><strong>Google and Meta connections:</strong> deleted as soon as you disconnect Merchant Center, Google Ads or Meta Ads, or uninstall MerchLight.</li>
+  <li><strong>Ad figures:</strong> we keep the figures for the periods you viewed, refreshed at most every 30 minutes (every 6 hours for past periods), and delete them when you disconnect that ad platform.</li>
   <li><strong>Scan history:</strong> kept while MerchLight is installed, so you can see how your store changes over time.</li>
   <li><strong>Store data and scan history after uninstalling:</strong> deleted within 48 hours, when Shopify sends us the deletion request.</li>
   <li><strong>Merchant Center product lists:</strong> we keep only the latest two lists and delete older ones automatically.</li>
   <li><strong>Support emails:</strong> kept for as long as needed to help you, and no longer than 2 years.</li>
 </ul>
 
+<h2 id="data-deletion">How to delete your data</h2>
+<p>You can delete your data at any time, in any of these ways:</p>
+<ul>
+  <li><strong>Disconnect an ad platform or Merchant Center:</strong> in MerchLight, open Connections and click Disconnect. We delete that connection and its data straight away, and for Meta we also remove MerchLight's permission from your account.</li>
+  <li><strong>Remove access from your Facebook account:</strong> in Facebook, go to Settings and privacy, Settings, Business integrations, and remove MerchLight. MerchLight can no longer read your ad data, and you can then disconnect it in the app to delete what we stored.</li>
+  <li><strong>Remove access from your Google account:</strong> in your Google Account, go to Security, "Third-party apps with account access", and remove MerchLight.</li>
+  <li><strong>Uninstall MerchLight:</strong> all your store data, connections and ad figures are deleted within 48 hours.</li>
+  <li><strong>Ask us:</strong> email <a href="mailto:privacy@merchlight.com">privacy@merchlight.com</a> from your store's email address and we will delete your data within 30 days and confirm by email.</li>
+</ul>
+
 <h2>Security</h2>
-<p>Data is encrypted in transit. Google access tokens are encrypted at rest. Access to production systems is limited to what is needed to run the service.</p>
+<p>Data is encrypted in transit. Google and Meta access tokens are encrypted at rest. Access to production systems is limited to what is needed to run the service.</p>
 
 <h2>Your rights</h2>
 <p>You can ask to access, correct, delete or export your information, and you can object to or ask us to restrict its use. Email <a href="mailto:privacy@merchlight.com">privacy@merchlight.com</a> and we will reply within 30 days. You can also complain to the UK Information Commissioner's Office (<a href="https://ico.org.uk">ico.org.uk</a>) or your local data protection authority.</p>
