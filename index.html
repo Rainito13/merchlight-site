@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>MerchLight — Find what's costing your Shopify store sales</title>
-<meta name="description" content="MerchLight scans your Shopify store, Google Merchant Center, Google Ads and Meta Ads, finds the problems that cost you sales, and shows your return on ad spend next to your store.">
+<meta name="description" content="MerchLight checks your Shopify store, Google Merchant Center, Google Ads and Meta Ads, finds what stops shoppers from buying, and tells you what to fix first.">
 <link rel="canonical" href="https://merchlight.com/">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
 <link rel="apple-touch-icon" href="/assets/icon-192.png">
@@ -29,8 +29,13 @@
   <main>
     <section class="hero" aria-labelledby="hero-title">
       <div>
-        <h1 id="hero-title">See what's costing your store sales.</h1>
-        <p class="lead">MerchLight scans your Shopify store, Google Merchant Center and your Google and Meta ads, finds the problems, and shows you how to resolve them.</p>
+        <h1 id="hero-title">Turn more visitors into buyers.</h1>
+        <p class="lead">MerchLight checks your Shopify store, Google Merchant Center and your Google and Meta ads, finds what stops shoppers from buying, and tells you what to fix first.</p>
+        <ul class="hero-points">
+          <li>One health score for your whole store</li>
+          <li>Sales at risk, in money</li>
+          <li>Step-by-step fixes, ranked by impact</li>
+        </ul>
         <div class="actions">
           <a class="btn btn-primary" href="mailto:hello@merchlight.com?subject=MerchLight%20early%20access">Get early access</a>
           <a class="btn btn-ghost" href="/demo/">See it in action</a>
@@ -52,13 +57,33 @@
           </div>
           <div class="rp-score">
             <svg width="58" height="58" viewBox="-32 -32 64 64" aria-hidden="true"><defs><linearGradient id="lp6258" x1="0" y1="1" x2="0" y2="0"><stop offset="0.62" stop-color="#F0A21E"/><stop offset="0.62" stop-color="#DDE0E7"/></linearGradient></defs><path d="M0 -15 C9 -15 15 -8 15 0 C15 6 11 9 9 11 C8 12 7.5 13.5 7.5 15 H-7.5 C-7.5 13.5 -8 12 -9 11 C-11 9 -15 6 -15 0 C-15 -8 -9 -15 0 -15 Z" fill="url(#lp6258)"/><rect x="-7" y="17" width="14" height="4" rx="2" fill="#8C92A0"/><rect x="-5" y="22.5" width="10" height="3.5" rx="1.75" fill="#8C92A0"/></svg>
-            <div><strong>62<small> / 100</small></strong><span class="rp-msg">Getting brighter — a few bulbs to change.</span></div>
+            <div>
+              <strong>62<small> / 100</small></strong>
+              <span class="rp-badges"><span class="pill pill-mid">Getting brighter</span><span class="pill pill-up">+8 this week</span></span>
+            </div>
+            <svg class="rp-trend" viewBox="0 0 120 44" aria-hidden="true"><path d="M2 36 L22 34 L42 35 L62 26 L82 22 L102 14 L118 10 L118 44 L2 44 Z" fill="#3D55E0" fill-opacity=".08"/><polyline points="2,36 22,34 42,35 62,26 82,22 102,14 118,10" fill="none" stroke="#3D55E0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="118" cy="10" r="3.5" fill="#fff" stroke="#3D55E0" stroke-width="2.5"/></svg>
+          </div>
+          <div class="rp-subs" aria-label="Sub-scores">
+            <span><small>Store</small><b>58</b></span>
+            <span><small>Google</small><b>71</b></span>
+            <span><small>Google Ads</small><b>64</b></span>
+            <span><small>Meta Ads</small><b class="off">Lights off</b></span>
+          </div>
+          <div class="rp-risk">
+            <span class="rp-risk-k">Sales at risk this month</span>
+            <strong>≈ $2,340</strong>
+            <span>Your best-seller <b>Linen Shirt</b> has sizes M and L sold out.</span>
+          </div>
+          <div class="rp-move">
+            <span class="rp-move-k">Your next best move</span>
+            <b>Restock sold-out sizes on your best-seller</b>
+            <span class="rp-move-tags"><span class="pill pill-high">High impact</span><em class="pts">+9</em></span>
           </div>
           <div class="rp-prio-head"><b>Your top priorities</b><em>+38 points left</em></div>
-          <div class="issue"><b>Change 3 Merchant Center settings</b><em class="pts">+10</em></div>
-          <div class="issue"><b>Fix 7 types of disapproved products</b><em class="pts">+8</em></div>
-          <div class="issue"><b>Ship 3 paid orders</b><em class="pts">+7</em></div>
-          <div class="issue"><b>Restock your best-seller</b><em class="pts">+4</em></div>
+          <div class="issue"><span><b>Change 3 Merchant Center settings</b><span class="pill pill-high">High</span></span><em class="pts">+10</em></div>
+          <div class="issue"><span><b>Ship 3 paid orders</b><span class="pill pill-high">High</span></span><em class="pts">+7</em></div>
+          <div class="issue"><span><b>Publish 2 products to your online store</b><span class="pill pill-med">Medium</span></span><em class="pts">+6</em></div>
+          <div class="issue"><span><b>Remove supplier text from 12 descriptions</b><span class="pill pill-med">Medium</span></span><em class="pts">+5</em></div>
           <p class="report-note">Example data · <a href="/demo/">See the full dashboard</a></p>
         </div>
       </div>
@@ -67,7 +92,12 @@
     <section id="what" aria-labelledby="what-title">
       <div class="what">
         <h2 id="what-title">What MerchLight does</h2>
-        <p>MerchLight is a Shopify app that checks your store and your Google Merchant Center automatically for problems that cost you sales — products out of stock, best-sellers missing sizes, products hidden from your online store, sale prices that look like mistakes, weak product descriptions and photos, orders waiting to ship, missing SKUs and images, and products Google has disapproved. Connect Google Ads and Meta Ads and it also shows your campaigns, spend, purchases and return on ad spend (ROAS) next to your store. It gives your store a health score from 0 to 100, ranks every problem by its impact, and explains exactly what to change. MerchLight only reads your data: you make every change yourself, in Shopify, Google or Meta.</p>
+        <p>MerchLight is a Shopify app that checks your store every day for the problems that quietly cost you sales, gives your store a health score from 0 to 100, and tells you exactly what to change, starting with what matters most. It only reads your data: you make every change yourself.</p>
+        <div class="what-grid">
+          <div><h3>Stock &amp; orders</h3><p>Sold-out best-sellers, best-sellers missing sizes, live products nobody can buy, orders waiting to ship and shipments without tracking.</p></div>
+          <div><h3>Product pages</h3><p>Thin descriptions, supplier text left behind, weak photos, sale prices that look like mistakes and products missing from your online store.</p></div>
+          <div><h3>Google &amp; ads</h3><p>Products Google disapproved or limited, and your Google Ads and Meta Ads campaigns, spend and ROAS next to your store.</p></div>
+        </div>
       </div>
     </section>
 
