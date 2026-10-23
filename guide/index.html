@@ -227,6 +227,10 @@ code{font:600 14px ui-monospace,"Cascadia Mono",monospace;background:var(--card)
           <tr><td><b>Campaigns switched on but not spending</b></td><td>Traffic you think is coming in, but isn't.</td></tr>
           <tr><td><b>Late shipments and missing tracking</b></td><td>“Where is my order?” messages, refunds and bad reviews that put off the next buyer.</td></tr>
           <tr><td><b>Missing SKUs</b></td><td>Stock and fulfilment mistakes that lead to overselling and cancelled orders.</td></tr>
+          <tr><td><b>A store that's slow on phones</b></td><td>Most shoppers browse on their phone. When the main content takes more than about 2.5 seconds, many leave before they see the product.</td></tr>
+          <tr><td><b>Apps and scripts slowing your store</b></td><td>Every app adds code shoppers' phones must download. A few heavy ones are often why a store feels slow.</td></tr>
+          <tr><td><b>Missing returns, shipping, privacy or contact pages</b></td><td>Shoppers check them before trusting a store they don't know, and Google can flag a store without them for “misrepresentation”.</td></tr>
+          <tr><td><b>No About us, FAQ or terms</b></td><td>Unanswered questions turn into abandoned visits and support messages.</td></tr>
         </tbody>
       </table></div>
       <h3>Tools that keep you converting</h3>
@@ -242,11 +246,12 @@ code{font:600 14px ui-monospace,"Cascadia Mono",monospace;background:var(--card)
           <tr><td><b>Email alerts</b></td><td>A new problem reaches your inbox before it costs days of sales.</td></tr>
           <tr><td><b>Score history and trophies</b></td><td>A 7-day trend and levels to earn, so the store stays optimised, not just fixed once.</td></tr>
           <tr><td><b>“I have stock” for dropshipping</b></td><td>Tell MerchLight once about supplier stock, and focus only on problems that are real.</td></tr>
+          <tr><td><b>Speed &amp; Trust</b></td><td>Your phone speed score for the home page, a collection and your best-seller, the apps slowing them down, and which trust pages are missing.</td></tr>
           <tr><td><b>Works on your phone</b></td><td>Check your score and fix what matters from anywhere.</td></tr>
         </tbody>
       </table></div>
       <div class="grid3">
-        <div class="card"><h4>It checks</h4><p>Your products, stock, images, SKUs and orders in Shopify, plus Google Merchant Center, Google Ads and Meta Ads if you connect them.</p></div>
+        <div class="card"><h4>It checks</h4><p>Your products, stock, images, SKUs and orders in Shopify, how fast your public store loads and its trust pages, plus Google Merchant Center, Google Ads and Meta Ads if you connect them.</p></div>
         <div class="card"><h4>It scores</h4><p>Everything it finds becomes one health score out of 100, shown as a light bulb: the brighter, the healthier.</p></div>
         <div class="card"><h4>It guides</h4><p>Each problem comes with the sales at stake, the items affected and clear steps to fix it, ranked by the most points for the least effort.</p></div>
       </div>
@@ -281,12 +286,21 @@ code{font:600 14px ui-monospace,"Cascadia Mono",monospace;background:var(--card)
       <div class="prose">
         <h3>How points are counted</h3>
         <ul>
-          <li><b>Impact.</b> Each problem removes points by impact (High removes the most, Low the fewest) and by how many items it affects.</li>
-          <li><b>A cap per problem.</b> No single problem can remove more than 25 points, so one big issue never hides everything else.</li>
+          <li><b>Weighted by priority.</b> Every check has a maximum it can take from your score, set by how directly it costs you sales (see the table below).</li>
+          <li><b>The first items count most.</b> Within that maximum, the first affected items remove the most points and each extra one a little less. One sold-out best-seller weighs more than 50 variants without a SKU, and your score doesn't jump just because a full scan counted more products than a quick one.</li>
           <li><b>How the parts add up.</b> First, ads take a share of the score: up to 20%, and only as much as your sales depend on them. No ad spend means no share at all. The rest of the score comes from your store and Google: 60% store and 40% Google with Merchant Center connected, or 100% store without it.
             <br><span style="color:var(--muted)">Example: ads share 10%. The other 90% is split 60/40, so the score is 54% store, 36% Google and 10% ads.</span></li>
           <li><b>Ignored problems</b> don't count. You decide what's relevant.</li>
         </ul>
+        <div class="table-wrap"><table>
+          <thead><tr><th>Priority</th><th>Checks</th><th>Most it can take</th></tr></thead>
+          <tbody>
+            <tr><td><b>1 · Losing sales now</b></td><td>Sold-out best-sellers, paid orders waiting to ship, best-sellers with sizes sold out, a store that's slow on phones, missing returns, shipping, privacy or contact pages</td><td>15–22 points each</td></tr>
+            <tr><td><b>2 · Conversion and trust</b></td><td>Products missing from your online store or without images, thin descriptions, weak photos, supplier text, missing tracking, wrong sale prices, live products nobody can buy</td><td>6–10 points each</td></tr>
+            <tr><td><b>3 · Housekeeping</b></td><td>Variants without a SKU, apps slowing the store, no About us, FAQ or terms</td><td>3–4 points each</td></tr>
+          </tbody>
+        </table></div>
+        <p>Google Merchant Center keeps its own rule: each problem type removes points by impact, with a cap.</p>
         <h3>Sub-scores</h3>
         <p>Below the main score, four tiles show <b>Store</b>, <b>Google Merchant</b>, <b>Google Ads</b> and <b>Meta Ads</b> on their own. Tap any tile to jump to its details. A channel with no ad spend shows <span class="pill p-low">Lights off</span> and doesn't count. Early ad scores show “Early read” and firm up as spend and sales data grow.</p>
       </div>
@@ -303,6 +317,7 @@ code{font:600 14px ui-monospace,"Cascadia Mono",monospace;background:var(--card)
         <div class="card"><h4>Your top priorities</h4><p>Every open problem as a bulb on a garland, with its points, impact and time to fix. Mark one “I'm on it” to track it in progress.</p></div>
         <div class="card"><h4>Sales at risk</h4><p>Past sales of products that are now out of stock, plus paid orders waiting to ship. If nothing is at risk, it shows your best-seller instead.</p></div>
         <div class="card"><h4>Your level</h4><p>Trophies earned by keeping your score up, day after day. See below.</p></div>
+        <div class="card"><h4>Speed &amp; Trust</h4><p>Your phone speed score for the home page, a collection and your best-seller, the slowest app or script, and which trust pages your store has.</p></div>
       </div>
       <h3>Trophies</h3>
       <div class="cups">
@@ -321,7 +336,7 @@ code{font:600 14px ui-monospace,"Cascadia Mono",monospace;background:var(--card)
       <div class="prose">
         <ul>
           <li><b>Summary.</b> Open issues, high-impact issues, checks passed and issues resolved since the last scan.</li>
-          <li><b>Search</b> by product, order or SKU, and <b>filter</b> by type (Google Merchant, Stock, Product pages, Images, SKU, Orders, Google Ads, Meta Ads) and by impact. Each filter shows how many issues it holds.</li>
+          <li><b>Search</b> by product, order or SKU, and <b>filter</b> by type (Google Merchant, Stock, Product pages, Speed, Trust pages, Images, SKU, Orders, Google Ads, Meta Ads) and by impact. Each filter shows how many issues it holds.</li>
           <li><b>Open any issue</b> to see why it matters, how to resolve it, and each affected item with a direct button: “Restock in Shopify”, “Open order”, “Open in Google Ads” and so on.</li>
           <li><b>Export CSV</b> <span class="pill p-pro">Pro</span> on every issue: download its list of affected products or orders as a spreadsheet, with a link to each one in your Shopify admin. No customer data is included.</li>
           <li><b>Checks passed</b> lists what's already in good shape.</li>
@@ -347,6 +362,8 @@ code{font:600 14px ui-monospace,"Cascadia Mono",monospace;background:var(--card)
           <tr><td><b>Merchant Center settings blocking products</b></td><td><span class="pill p-high">High</span></td><td>An account setting in Google stops products from showing.</td><td>Quick win · ~2 min</td></tr>
           <tr><td><b>Products disapproved on Google</b></td><td><span class="pill p-high">High</span></td><td>Google rejected products for Shopping ads or free listings.</td><td>About 15 min</td></tr>
           <tr><td><b>Ad campaigns spending with no sales</b></td><td><span class="pill p-high">High</span></td><td>A campaign spent 30 or more in your currency in 7 days with no conversions or purchases.</td><td>Review the campaign</td></tr>
+          <tr><td><b>Your store is slow on phones</b></td><td><span class="pill p-high">High</span> / <span class="pill p-med">Medium</span></td><td>Google PageSpeed Insights, on a mobile connection, rates the home page, a collection or your best-seller as slow (under 50) or could be faster (50–69). Real-shopper data from Google takes priority when your store has enough visits. Tested every 3 days.</td><td>Open the report · about 15 min</td></tr>
+          <tr><td><b>Trust pages missing from your store</b></td><td><span class="pill p-high">High</span></td><td>No refund/returns, shipping or privacy policy, or no contact details, found in your policy pages or in your menu and footer links.</td><td>Settings → Policies · about 15 min</td></tr>
           <tr><td><b>Active products customers can't buy</b></td><td><span class="pill p-med">Medium</span></td><td>Active, at zero stock, “Continue selling when out of stock” off, and no recent sales.</td><td>About 10 min</td></tr>
           <tr><td><b>Active products missing from your online store</b></td><td><span class="pill p-med">Medium</span></td><td>An active product isn't published to the Online Store sales channel. Common after importing from dropshipping apps.</td><td>Quick win · ~2 min</td></tr>
           <tr><td><b>Supplier text left in product descriptions</b></td><td><span class="pill p-med">Medium</span></td><td>A description still has typical supplier text: measurement notes, “100% brand new and high quality”, screen-colour disclaimers or another language.</td><td>About 10 min</td></tr>
@@ -357,6 +374,8 @@ code{font:600 14px ui-monospace,"Cascadia Mono",monospace;background:var(--card)
           <tr><td><b>Sale prices that look like mistakes</b></td><td><span class="pill p-low">Low</span></td><td>A variant's compare-at price is 0, or not higher than its selling price.</td><td>About 10 min</td></tr>
           <tr><td><b>Product photos that hold back sales</b></td><td><span class="pill p-low">Low</span></td><td>A product has only one photo, or its main photo is under 800 px on its longest side.</td><td>About 15 min</td></tr>
           <tr><td><b>Products without an image</b></td><td><span class="pill p-low">Low</span></td><td>An active product has no image.</td><td>About 10 min</td></tr>
+          <tr><td><b>Apps and scripts slowing down your store</b></td><td><span class="pill p-low">Low</span></td><td>An app or script blocks the page for 150 ms or more, or weighs 300 KB or more. Shopify's own code is never listed.</td><td>Review your apps · about 10 min</td></tr>
+          <tr><td><b>Pages that answer shoppers' questions</b></td><td><span class="pill p-low">Low</span></td><td>No About us page, FAQ or terms of service found.</td><td>Create the page · about 15 min</td></tr>
           <tr><td><b>Active ad campaigns that aren't spending</b></td><td><span class="pill p-low">Low</span></td><td>A campaign is switched on but spent nothing in 7 days.</td><td>Check budget or approval</td></tr>
         </tbody>
       </table></div>
@@ -482,6 +501,12 @@ code{font:600 14px ui-monospace,"Cascadia Mono",monospace;background:var(--card)
           <p>You've reached your plan's manual scans: the free scan on Free, 2 a week on Basic, or the short 5-minute pause on Pro. The message above the button says when you can scan again.</p></details>
         <details><summary>Ad figures don't match my store's sales</summary>
           <p>Spend, conversions and ROAS are reported by Google and Meta with their own attribution rules, so they can differ from the orders your store records.</p></details>
+        <details><summary>My score changed after the October 2026 update, but I didn't change anything</summary>
+          <p>The score now weighs most what costs you sales (like sold-out best-sellers), and less what's housekeeping (like SKUs). We also added the Speed &amp; Trust checks. Your Overview says so on the first scan after the update, and these changes never trigger alert emails on their own.</p></details>
+        <details><summary>Speed shows “Testing your speed…”</summary>
+          <p>A speed test takes up to a minute per page, so it runs in the background after a scan and appears on the next one. It's repeated every 3 days. Stores with a password or that are closed can't be tested.</p></details>
+        <details><summary>A trust page is flagged, but my store has it</summary>
+          <p>MerchLight looks at Shopify's policy pages and at the links in your menu and footer. If your page has an unusual name or lives somewhere else, mark the issue “Not relevant for my store”, or add the link to your footer so shoppers find it too.</p></details>
         <details><summary>Meta Ads says “Reconnect”</summary>
           <p>Facebook sign-ins expire from time to time. Go to Connections and press Reconnect Meta Ads. Your settings are kept.</p></details>
       </div>
