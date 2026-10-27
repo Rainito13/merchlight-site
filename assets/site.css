@@ -322,7 +322,9 @@ footer a{color:var(--muted)}
 .rp-move-tags .pts{font-style:normal;font-family:var(--display);font-weight:900;color:#0E7A4F;font-size:1.1rem}
 .issue > span{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px}
 .issue{align-items:center;padding:10px 0}
-.what-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:22px}
+.what-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:22px}
+@media (max-width:1100px){.what-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.checks > .check-group.highlight:last-child:nth-child(odd){grid-column:1/-1}
 .what-grid > div{background:#F6F8FD;border:1px solid var(--line);border-radius:var(--radius-sm);padding:16px 18px}
 .what-grid h3{font-family:var(--display);font-weight:900;font-size:1.1rem;color:var(--night);margin:0 0 6px}
 .what-grid p{font-size:.98rem;color:var(--muted);line-height:1.55}
