@@ -235,6 +235,7 @@ code{font:600 14px ui-monospace,"Cascadia Mono",monospace;background:var(--card)
           <tr><td><b>No size guide on clothing and shoes</b></td><td>Shoppers unsure of their size leave, or buy two sizes and send one back.</td></tr>
           <tr><td><b>Missing conversion boosters</b></td><td>Reviews, one-tap checkout, recommended products, a sticky Add to cart and an email sign-up help shoppers decide and buy. MerchLight suggests the ones your store doesn't have yet.</td></tr>
           <tr><td><b>Abandoned checkouts with no reminder</b></td><td>A shopper who reaches the checkout already chose the product. Without a reminder email a few hours later, that sale is simply lost.</td></tr>
+          <tr><td><b>Apps you may be paying for without using</b></td><td>An app switched off in your theme, or two apps doing the same job, usually means a monthly charge for nothing, and extra code that slows your pages.</td></tr>
         </tbody>
       </table></div>
       <h3>Tools that keep you converting</h3>
@@ -302,8 +303,8 @@ code{font:600 14px ui-monospace,"Cascadia Mono",monospace;background:var(--card)
           <thead><tr><th>Priority</th><th>Checks</th><th>Most it can take</th></tr></thead>
           <tbody>
             <tr><td><b>1 · Losing sales now</b></td><td>Sold-out best-sellers, paid orders waiting to ship, best-sellers with sizes sold out, a store that's slow on phones, missing returns, shipping, privacy or contact pages, abandoned checkouts with no reminder email (up to 12)</td><td>15–22 points each</td></tr>
-            <tr><td><b>2 · Conversion and trust</b></td><td>Products missing from your online store or without images, thin descriptions, weak photos, supplier text, products that don't say their size, no size guide, missing tracking, wrong sale prices, live products nobody can buy, conversion boosters, abandoned checkout emails that bring few shoppers back (up to 5)</td><td>5–10 points each</td></tr>
-            <tr><td><b>3 · Housekeeping</b></td><td>Variants without a SKU, apps slowing the store, no About us, FAQ or terms</td><td>3–4 points each</td></tr>
+            <tr><td><b>2 · Conversion and trust</b></td><td>Products missing from your online store or without images, thin descriptions, weak photos, supplier text, products that don't say their size, no size guide, missing tracking, wrong sale prices, live products nobody can buy, conversion boosters, abandoned checkout emails that bring few shoppers back, two apps doing the same job (up to 5)</td><td>5–10 points each</td></tr>
+            <tr><td><b>3 · Housekeeping</b></td><td>Variants without a SKU, apps slowing the store, apps switched off in your theme, code left behind by removed apps, no About us, FAQ or terms</td><td>3–4 points each</td></tr>
           </tbody>
         </table></div>
         <p>Google Merchant Center keeps its own rule: each problem type removes points by impact, with a cap.</p>
@@ -349,7 +350,7 @@ code{font:600 14px ui-monospace,"Cascadia Mono",monospace;background:var(--card)
       <div class="prose">
         <ul>
           <li><b>Summary.</b> Open issues, high-impact issues, checks passed and issues resolved since the last scan.</li>
-          <li><b>Search</b> by product, order or SKU, and <b>filter</b> by type (Google Merchant, Stock, Product pages, Speed, Trust pages, Conversion boosters, Abandoned checkouts, Images, SKU, Orders, Google Ads, Meta Ads) and by impact. Each filter shows how many issues it holds. Links from the Overview open the right filter with the issue already open; “See all issues” opens them all.</li>
+          <li><b>Search</b> by product, order or SKU, and <b>filter</b> by type (Google Merchant, Stock, Product pages, Speed, Trust pages, Conversion boosters, Abandoned checkouts, Apps, Images, SKU, Orders, Google Ads, Meta Ads) and by impact. Each filter shows how many issues it holds. Links from the Overview open the right filter with the issue already open; “See all issues” opens them all.</li>
           <li><b>Open any issue</b> to see why it matters, how to resolve it, and each affected item with a direct button: “Restock in Shopify”, “Open order”, “Open in Google Ads” and so on.</li>
           <li><b>Export CSV</b> <span class="pill p-pro">Pro</span> on every issue: download its list of affected products or orders as a spreadsheet, with a link to each one in your Shopify admin. No customer data is included.</li>
           <li><b>What MerchLight checks</b> lists every check by area: passed, to fix (tap it to open the issue), or not checked on this scan with the reason, for example “Only for stores that sell clothing or shoe sizes”.</li>
@@ -392,6 +393,9 @@ code{font:600 14px ui-monospace,"Cascadia Mono",monospace;background:var(--card)
           <tr><td><b>Products without an image</b></td><td><span class="pill p-low">Low</span></td><td>An active product has no image.</td><td>About 10 min</td></tr>
           <tr><td><b>Apps and scripts slowing down your store</b></td><td><span class="pill p-low">Low</span></td><td>An app or script blocks the page for 150 ms or more, or weighs 300 KB or more. Shopify's own code is never listed.</td><td>Review your apps · about 10 min</td></tr>
           <tr><td><b>Conversion boosters your store could add</b></td><td><span class="pill p-low">Low</span></td><td>Read from your home page and a product page: product reviews, express checkout buttons, recommended products, a sticky Add to cart on phones, an email sign-up and a free shipping message. Each missing one counts by its weight (up to 9 points in total).</td><td>About 15 min each</td></tr>
+          <tr><td><b>Apps switched off in your theme</b></td><td><span class="pill p-med">Medium</span></td><td>An app's block is switched off in your published theme (App embeds or a page template) and MerchLight didn't see the app anywhere on your store. Shoppers don't see it, but its charge usually runs until you uninstall it. Shopify doesn't show other apps' bills to MerchLight, so you decide which ones you pay for.</td><td>Settings → Apps · ~2 min</td></tr>
+          <tr><td><b>Apps doing the same job</b></td><td><span class="pill p-med">Medium</span></td><td>Two or more apps working on your store for the same thing: product reviews, email marketing, pop-ups, upsells, live chat, currency, translation, wishlist, loyalty, search, size charts, cookie banners or page building. Found from your public pages and your theme.</td><td>Keep one, uninstall the other · about 10 min</td></tr>
+          <tr><td><b>Code left behind by apps you may have removed</b></td><td><span class="pill p-med">Medium</span> / <span class="pill p-low">Low</span></td><td>Files from known apps still in your theme while the app isn't working on your store. Medium when the code is loaded on every page (it slows the store), low when it's only left in the theme.</td><td>Duplicate the theme, then remove the code · about 15 min</td></tr>
           <tr><td><b>What's slowing your pages down</b></td><td><span class="pill p-low">Info</span></td><td>From the PageSpeed report of your slower pages: big images, a late main image, blocking code, too much JavaScript, fonts, a slow first response, a heavy page, layout jumps or too many elements, with the time and weight you could save. Explains your speed score; takes no points.</td><td>Open the report</td></tr>
           <tr><td><b>Pages that answer shoppers' questions</b></td><td><span class="pill p-low">Low</span></td><td>No About us page, FAQ or terms of service found.</td><td>Create the page · about 15 min</td></tr>
           <tr><td><b>Abandoned checkout emails bring few shoppers back</b></td><td><span class="pill p-med">Medium</span></td><td>Reminders are going out, but fewer than 3% of at least 10 abandoned checkouts in the last 30 days came back and paid.</td><td>Improve the email · about 15 min</td></tr>
@@ -504,6 +508,7 @@ code{font:600 14px ui-monospace,"Cascadia Mono",monospace;background:var(--card)
         <div class="card"><h4>You stay in control</h4><p>Disconnect any channel from Connections at any time. Sign-in tokens are stored encrypted.</p></div>
         <div class="card"><h4>Your language</h4><p>MerchLight follows your Shopify admin language. To choose another one, go to Connections → Language. Email alerts use the same language.</p></div>
         <div class="card"><h4>Speed &amp; Trust</h4><p>Reads only your public store pages, like a shopper would. The page addresses are sent to Google PageSpeed Insights to measure speed.</p></div>
+        <div class="card"><h4>Your theme</h4><p>MerchLight reads your published theme to see which apps are switched on or off and what code they left behind. It never changes your theme and never uninstalls apps.</p></div>
         <div class="card"><h4>Deleted when you leave</h4><p>Uninstall MerchLight and your store's data is deleted, as described in our privacy policy.</p></div>
       </div>
       <p class="prose">Privacy policy: <a href="https://merchlight.com/privacy/">merchlight.com/privacy</a> · Terms: <a href="https://merchlight.com/terms/">merchlight.com/terms</a></p>
