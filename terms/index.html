@@ -8,6 +8,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
 <link rel="canonical" href="https://merchlight.com/terms/">
 <link rel="stylesheet" href="/assets/site.css">
+<link rel="stylesheet" href="/assets/signin.css">
 </head>
 <body>
 <div class="wrap">
@@ -21,6 +22,25 @@
       <a href="/guide/">Guide</a>
       <a href="mailto:hello@merchlight.com">Contact</a>
     </nav>
+    <div class="ml-signin">
+      <button type="button" class="ml-signin-btn" aria-label="Sign in" aria-expanded="false" aria-controls="ml-signin-menu">
+        <svg width="24" height="24" viewBox="-32 -32 64 64" aria-hidden="true"><circle class="glow" cx="0" cy="-1" r="24" fill="#FFD978" opacity=".5"/><path class="fill" d="M0 -15 C9 -15 15 -8 15 0 C15 6 11 9 9 11 C8 12 7.5 13.5 7.5 15 H-7.5 C-7.5 13.5 -8 12 -9 11 C-11 9 -15 6 -15 0 C-15 -8 -9 -15 0 -15 Z"/><rect x="-7" y="17" width="14" height="4" rx="2" fill="#8C92A0"/><rect x="-5" y="22.5" width="10" height="3.5" rx="1.75" fill="#8C92A0"/></svg>
+      </button>
+      <div class="ml-signin-pop" id="ml-signin-menu">
+        <h2>Sign in</h2>
+        <a class="ml-signin-opt" href="https://app.merchlight.com/admin/login">
+          <span class="ml-signin-ic" style="background:#EEF1FF"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3D55E0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M3 9h18M8 14h4"/></svg></span>
+          <span><b>Team &amp; business partners</b><small>Prospects, calendar and earnings. We email you a sign-in link, no password.</small></span>
+          <span class="ml-signin-go" aria-hidden="true">→</span>
+        </a>
+        <a class="ml-signin-opt" href="https://apps.shopify.com/merchlight-store-health-check" target="_blank" rel="noopener">
+          <span class="ml-signin-ic" style="background:#E3F6EC"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#067647" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8h12l-1 12H7z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg></span>
+          <span><b>Store owners</b><small>MerchLight opens inside your Shopify admin, under Apps.</small></span>
+          <span class="ml-signin-go" aria-hidden="true">→</span>
+        </a>
+        <p class="ml-signin-foot">Referral partner? Open the personal link from your welcome email. Lost it? Write to <a href="mailto:partners@merchlight.com">partners@merchlight.com</a>.</p>
+      </div>
+    </div>
   </header>
 </div>
 <main class="legal">
@@ -70,5 +90,6 @@
 <p>Questions about these terms: <a href="mailto:support@merchlight.com">support@merchlight.com</a>.</p>
 </main>
 <div class="wrap"><footer><div class="row"><span>© 2026 MerchLight · Operated by Rainito Lopes, Edgware, London, United Kingdom</span><nav aria-label="Legal"><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="/guide/">User guide</a><a href="mailto:support@merchlight.com">support@merchlight.com</a></nav></div></footer></div>
+<script src="/assets/signin.js" defer></script>
 </body>
 </html>

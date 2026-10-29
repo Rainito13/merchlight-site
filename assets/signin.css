@@ -1,0 +1,26 @@
+/* Atalho "Sign in": ícone da lâmpada no topo do site; abre um menu com o painel da equipa e a app. */
+.ml-signin{position:relative;display:inline-flex;margin-left:18px}
+.ml-signin-btn{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:#fff;border:2px solid #DDE3F3;cursor:pointer;padding:0;transition:border-color .2s,box-shadow .2s}
+.ml-signin-btn:hover,.ml-signin-btn[aria-expanded="true"]{border-color:#F0A21E;box-shadow:0 8px 20px -12px rgba(240,162,30,.9)}
+.ml-signin-btn:focus-visible,.ml-signin-opt:focus-visible{outline:3px solid #F0A21E;outline-offset:3px}
+.ml-signin-btn .glow{opacity:0;transition:opacity .3s}
+.ml-signin-btn .fill{fill:#C9CFE3;transition:fill .3s}
+.ml-signin-btn:hover .glow,.ml-signin-btn[aria-expanded="true"] .glow{opacity:1}
+.ml-signin-btn:hover .fill,.ml-signin-btn[aria-expanded="true"] .fill{fill:#F0A21E}
+.ml-signin-pop{position:absolute;right:0;top:calc(100% + 10px);width:340px;max-width:calc(100vw - 32px);background:#fff;border:1px solid #DDE3F3;border-radius:18px;box-shadow:0 24px 50px -20px rgba(20,33,61,.45);padding:10px;z-index:50;opacity:0;transform:translateY(-6px) scale(.98);pointer-events:none;visibility:hidden;transition:opacity .18s,transform .18s,visibility .18s;text-align:left;font-family:"Nunito Sans","Segoe UI",system-ui,sans-serif;font-weight:400;font-size:15px;line-height:1.45}
+.ml-signin-pop.open{opacity:1;transform:none;pointer-events:auto;visibility:visible}
+.ml-signin-pop::before{content:"";position:absolute;inset:0 0 auto 0;height:4px;border-radius:18px 18px 0 0;background:linear-gradient(90deg,#3D55E0,#F0A21E,#FF5C7A)}
+.ml-signin-pop h2{font:900 1rem "Nunito",ui-rounded,"Segoe UI",system-ui,sans-serif;color:#14213D;margin:8px 8px 6px}
+.ml-signin-opt{display:grid;grid-template-columns:40px 1fr auto;gap:10px;align-items:center;padding:10px;border-radius:12px;text-decoration:none;color:#1B2340;transition:background .15s}
+.ml-signin-opt:hover{background:#F6F8FD}
+.ml-signin-ic{width:40px;height:40px;border-radius:12px;display:grid;place-items:center}
+.ml-signin-opt b{display:block;font:800 1rem "Nunito",ui-rounded,"Segoe UI",system-ui,sans-serif;color:#14213D}
+.ml-signin-opt small{color:#55607E;font-size:13px;line-height:1.35;display:block}
+.ml-signin-go{color:#3D55E0;font-weight:800}
+.ml-signin-foot{font-size:12.5px;color:#55607E;margin:6px 10px 4px;border-top:1px dashed #DDE3F3;padding-top:8px}
+.ml-signin-foot a{color:#3D55E0}
+@media (max-width:560px){.ml-signin{margin-left:auto}}
+@media (prefers-reduced-motion:reduce){.ml-signin-btn,.ml-signin-pop,.ml-signin-btn *{transition:none !important}}
+/* O menu e a lâmpada ficam juntos à direita do logótipo. */
+.top > nav,.sitebar-in > nav{margin-left:auto}
+@media (max-width:560px){.top .ml-signin{order:1}.top > nav{order:2}}
