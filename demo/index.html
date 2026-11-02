@@ -42,6 +42,87 @@
 .ad-filters{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;align-items:center;margin:4px 0 6px}
 .tour.tour-4{grid-template-columns:repeat(2,1fr)}
 @media (max-width:700px){.ad-plat,.ad-kpis{grid-template-columns:1fr 1fr}.ad-plat{grid-template-columns:1fr}.ad-row{grid-template-columns:minmax(0,1.6fr) .8fr .7fr .6fr}.ad-row > :nth-child(2),.ad-row > :nth-child(5){display:none}.tour.tour-4{grid-template-columns:1fr}}
+
+/* Nov 2026: cards in the app's current style (stripe, badge, outlined rows, pill buttons). Lamps unchanged. */
+.mx-card{position:relative;background:#fff;border:1px solid #E3E5EA;border-radius:14px;padding:18px 16px 16px;overflow:visible}
+.mx-card::before,.mx-risk::before{content:"";position:absolute;inset:0 0 auto 0;height:4px;background:var(--s);border-radius:14px 14px 0 0}
+.mx-head{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.mx-head h3{font-family:var(--body);font-size:.95rem;font-weight:700;margin:0;color:var(--night)}
+.mx-head span:not(.mx-badge){display:block;font-size:.78rem;color:var(--muted)}
+.mx-right{margin-left:auto}
+.mx-badge{flex:none;width:34px;height:34px;border-radius:10px;display:grid;place-items:center;box-shadow:0 6px 14px -8px rgba(30,44,120,.8)}
+.mx-subs{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}
+.mx-sub{display:grid;grid-template-columns:auto 1fr auto;gap:8px;align-items:center;border:1px solid #E3E5EA;border-left:5px solid var(--band);border-radius:12px;padding:10px 12px}
+.mx-sub div{display:flex;flex-direction:column;align-items:flex-start;gap:2px;min-width:0}
+.mx-sub b{display:flex;align-items:center;gap:6px;font-size:.86rem}
+.mx-sub b img{width:16px;height:16px}
+.mx-sub span:not(.pill){color:var(--muted);font-size:.75rem}
+.mx-sub strong{font-family:var(--display);font-weight:900;font-size:1.25rem;white-space:nowrap}
+.mx-sub.off{border-style:dashed;border-left-style:solid}.mx-sub strong.muted{color:#A4A9B6}
+.mx-sub strong small{font-size:.45em;color:var(--muted)}
+.mx-gold{border:1.5px solid #F0A21E;background:#FFFBF2;border-radius:12px;padding:14px;display:flex;flex-direction:column;gap:8px;box-shadow:0 10px 24px -18px rgba(240,162,30,.9)}
+.mx-row-top{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
+.mx-pts{font-size:.78rem;font-weight:900;color:#067647;background:#E3F6EC;border-radius:999px;padding:4px 11px;white-space:nowrap}
+.mx-btns{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+.mx-gold-btn{display:inline-flex;align-items:center;gap:6px;border-radius:999px;padding:8px 16px;font-size:.8rem;font-weight:800;color:#1B1440;background:linear-gradient(135deg,#FFD978,#F0A21E);align-self:flex-start}
+.mx-navy{display:inline-flex;align-items:center;gap:6px;border-radius:999px;padding:8px 15px;font-size:.8rem;font-weight:800;color:#fff;background:linear-gradient(135deg,#3D55E0,#1E2C78);box-shadow:0 8px 18px -12px rgba(30,44,120,.9);white-space:nowrap}
+.mx-navy.sm{padding:5px 12px;font-size:.75rem}
+.mx-ghost{display:inline-flex;align-items:center;border:1.5px solid #E3E3E3;background:#fff;border-radius:999px;padding:7px 14px;font-size:.8rem;font-weight:650;color:#303030}
+.mx-more{display:inline-flex;align-items:center;gap:8px;border:1.5px solid #C7CEF5;background:#F5F7FF;color:#1E2C78;border-radius:999px;padding:6px 14px;font-size:.8rem;font-weight:800}
+.mx-more i{font-style:normal;display:grid;place-items:center;width:18px;height:18px;border-radius:50%;background:#3D55E0;color:#fff;font-size:.7rem;line-height:1}
+.mx-list{display:flex;flex-direction:column;gap:8px;margin:8px 0}
+.mx-pr{display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:10px;align-items:center;border:1px solid #E3E5EA;border-radius:12px;padding:10px 12px}
+.mx-pr b{display:block;font-size:.86rem;margin-bottom:3px}
+.mx-pr em{font-style:normal;font-family:var(--display);font-weight:900;font-size:1rem;color:#0E7A4F}
+.mx-outline{border:1px solid #E3E5EA;border-radius:12px;padding:12px}
+.mx-off{border-style:dashed;display:flex;flex-direction:column;gap:8px;align-items:flex-start}.mx-offtext{margin:0;font-size:.8rem;color:var(--muted)}
+.mx-outline > b{display:flex;align-items:center;gap:6px;font-size:.86rem;margin-bottom:8px}
+.mx-outline > b img{width:16px;height:16px}
+.mx-kpis{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.mx-kpis.four{grid-template-columns:repeat(4,1fr);margin-bottom:12px}
+.mx-kpis span{border-radius:10px;padding:8px 10px;display:flex;flex-direction:column;font-size:.72rem;color:#3E4450}
+.mx-kpis strong{font-family:var(--display);font-weight:900;font-size:1.05rem}
+.k-blue{background:#EEF1FF}.k-blue strong{color:#1E2C78}.k-amber{background:#FFF4DB}.k-amber strong{color:#8A5A00}
+.k-green{background:#E3F6EC}.k-green strong{color:#067647}.k-pink{background:#FFEEF1}.k-pink strong{color:#B42350}
+.mx-count{white-space:nowrap;font-size:.75rem;font-weight:800;border-radius:999px;padding:3px 10px;background:#EEF1FF;color:#1E2C78}
+.mx-track{height:8px;border-radius:999px;background:#E6E8EC;overflow:hidden;margin:2px 0 6px}
+.mx-track span{display:block;height:8px;border-radius:999px;background:linear-gradient(90deg,#3D55E0,#12B76A)}
+.mx-track.gold span{background:linear-gradient(90deg,#F0A21E,#FFD978)}
+.mx-row{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:10px;align-items:center;border:1px solid #E3E5EA;border-radius:12px;padding:9px 11px;font-size:.84rem}
+.mx-row b{font-weight:650;display:flex;flex-direction:column}
+.mx-row small{font-size:.72rem;font-weight:500;color:var(--muted)}
+.mx-row.done{background:#F3FBF6;border-color:#CDEFD9}
+.mx-row.next{border:1.5px solid #3D55E0;background:#F5F7FF;grid-template-columns:auto minmax(0,1fr)}
+.mx-row.next b{font-weight:700}
+.mx-logo{width:30px;height:30px;border-radius:9px;display:grid;place-items:center;background:#F7F8FA}
+.mx-logo img{width:18px;height:18px}
+.mx-check{width:22px;height:22px;border-radius:50%;background:#12B76A;color:#fff;display:grid;place-items:center;font-size:.72rem;font-weight:900;margin:0 4px}
+.mx-ring{width:22px;height:22px;border-radius:50%;border:2px solid #3D55E0;box-sizing:border-box;margin:0 4px}
+.mx-ok{font-size:.72rem;font-weight:800;border-radius:999px;padding:3px 9px;background:#E3F6EC;color:#067647;white-space:nowrap}
+.mx-act{display:flex;align-items:center;gap:6px}
+.mx-skip{font-size:.72rem;font-weight:650;color:#6B7280;text-decoration:underline;text-underline-offset:2px;white-space:nowrap}
+.mx-line{display:flex;justify-content:space-between;align-items:center;gap:8px;border:1px solid #E3E5EA;border-radius:12px;padding:8px 11px;font-size:.84rem}
+.mx-trophies{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:10px}
+.mx-trophies span{border:1px solid #E3E5EA;border-radius:10px;padding:6px 2px;text-align:center;font-size:.72rem;font-weight:700;color:var(--muted)}
+.mx-trophies span.me{border:1.5px solid #8E96A3;background:#F3F4F6;color:#3E4450}
+.mx-risk{position:relative;border-radius:14px;padding:18px 16px 16px;color:#fff;background:radial-gradient(120% 90% at 100% 0%,#3D55E0 0%,#1E2C78 55%,#14213D 100%);--s:linear-gradient(90deg,#F0A21E,#FF5C7A)}
+.mx-risk .mx-head h3{color:#fff}.mx-risk .mx-head span:not(.mx-badge){color:#C9D1F6}
+.mx-risk-in{border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.06);border-radius:12px;padding:14px;display:flex;flex-direction:column;gap:8px}
+.mx-risk-in p{margin:0;color:#DCE1FA;font-size:.85rem}.mx-risk-in b{color:#fff}
+.mx-risk .dl-money{color:#FFD978}
+.mx-chan{display:inline-flex;align-items:center;gap:7px;border:1.5px solid #E3E3E3;background:#fff;border-radius:12px;padding:6px 11px;font-weight:700;font-size:.8rem;color:#303030}
+.mx-chan img{width:16px;height:16px}
+.mx-chan i{font-style:normal;font-size:.68rem;font-weight:800;border-radius:999px;padding:2px 8px;background:#E3F6EC;color:#067647}
+.ad-tabs .mx-chan{border:1.5px solid #E3E3E3;background:#fff;color:#303030;padding:6px 11px;border-radius:12px}
+.ad-tabs .mx-chan.on,.mx-chan.on{border-color:#3D55E0;background:#F5F7FF;color:#303030;box-shadow:0 8px 18px -14px rgba(61,85,224,.9)}
+.mx-seg{display:inline-flex;flex-wrap:wrap;background:#F7F8FA;border:1.5px solid #E3E3E3;border-radius:22px;padding:3px;gap:2px}
+.mx-seg span{display:inline-flex;align-items:center;gap:6px;border-radius:999px;padding:5px 11px;font-size:.78rem;font-weight:700;color:#5C6066}
+.mx-seg span.on{background:linear-gradient(135deg,#3D55E0,#1E2C78);color:#fff}
+.mx-seg i{font-style:normal;font-size:.68rem;font-weight:800;border-radius:999px;padding:1px 6px;background:#E9EBF0;color:#5C6066}
+.mx-seg span.on i{background:rgba(255,255,255,.22);color:#fff}
+.mx-camp{border:1px solid #E3E5EA !important;border-radius:12px;padding:9px 10px !important;margin-top:6px}
+.mx .v3-level{display:flex;gap:12px;align-items:center}
+@media (max-width:700px){.mx-subs{grid-template-columns:1fr}.mx-kpis.four{grid-template-columns:1fr 1fr}}
 </style>
 <link rel="stylesheet" href="/assets/signin.css">
 </head>
@@ -91,20 +172,19 @@
     <section class="demo-shot" aria-label="Example MerchLight dashboard">
       <div class="dl-window">
         <div class="dl-bar"><span></span><span></span><span></span><em>Shopify admin · Apps · MerchLight</em></div>
-        <div class="dl-app">
+        <div class="dl-app mx">
           <div class="dl-head">
             <img src="/assets/logo.svg" alt="MerchLight">
             <div class="dl-sep"></div>
             <div class="dl-meta"><b>Overview</b><span>Last scan 12 min ago · all 1,248 products checked</span></div>
-            <span class="dl-run">Run scan</span>
+            <span class="mx-navy" style="margin-left:auto">Run scan</span>
           </div>
 
           <div class="dl-grid">
             <div class="dl-main">
-              <div class="dl-card" id="callout-1">
+              <div class="mx-card" id="callout-1" style="--s:linear-gradient(90deg,#F0A21E,#FF5C7A)">
                 <span class="dl-marker" aria-hidden="true">1</span>
-                <div class="v3-head"><div><h3 class="v3-title">Store health</h3><span class="v3-sub">How brightly your store is shining today.</span></div>
-                <span class="rp-chip"><svg width="28" height="35" viewBox="0 0 200 250" role="img" aria-label="MerchLight Silver trophy"><defs><linearGradient id="b-silverdc" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7D8590"/><stop offset=".35" stop-color="#FFFFFF"/><stop offset=".6" stop-color="#C3C9D2"/><stop offset="1" stop-color="#7D8590"/></linearGradient><linearGradient id="r-silverdc" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#C3C9D2"/></linearGradient></defs><ellipse cx="100" cy="242" rx="72" ry="6" fill="#1A1D29" fill-opacity=".12"/><path d="M44 48 C10 48 12 104 56 110" fill="none" stroke="url(#b-silverdc)" stroke-width="10" stroke-linecap="round"/><path d="M156 48 C190 48 188 104 144 110" fill="none" stroke="url(#b-silverdc)" stroke-width="10" stroke-linecap="round"/><path d="M38 30 H162 V66 C162 112 134 140 100 140 C66 140 38 112 38 66 Z" fill="url(#b-silverdc)"/><ellipse cx="100" cy="30" rx="62" ry="9" fill="url(#r-silverdc)" stroke="#7D8590" stroke-opacity=".35"/><path d="M54 40 C52 80 62 110 80 126" stroke="#fff" stroke-opacity=".45" stroke-width="7" fill="none" stroke-linecap="round"/><circle cx="100" cy="80" r="26" fill="#7D8590" fill-opacity=".25" stroke="#FFFFFF" stroke-opacity=".8" stroke-width="2"/><path d="M0 -15 C9 -15 15 -8 15 0 C15 6 11 9 9 11 C8 12 7.5 13.5 7.5 15 H-7.5 C-7.5 13.5 -8 12 -9 11 C-11 9 -15 6 -15 0 C-15 -8 -9 -15 0 -15 Z" transform="translate(100 78) scale(.85)" fill="#FFFFFF"/><rect x="93.5" y="91" width="13" height="3.4" rx="1.7" fill="#FFFFFF"/><rect x="95.5" y="96" width="9" height="3" rx="1.5" fill="#FFFFFF"/><rect x="91" y="140" width="18" height="22" fill="url(#b-silverdc)"/><ellipse cx="100" cy="150" rx="16" ry="5" fill="url(#r-silverdc)"/><path d="M66 162 H134 L142 186 H58 Z" fill="url(#b-silverdc)"/><rect x="40" y="186" width="120" height="50" rx="6" fill="#fff" stroke="#1E2C78" stroke-opacity=".15"/><rect x="44" y="190" width="112" height="42" rx="4" fill="none" stroke="#C3C9D2" stroke-width="1.5"/><image href="/assets/merchlight-wordmark.svg" x="47" y="190" width="106" height="27"/><text x="100" y="229" text-anchor="middle" font-family="Nunito, sans-serif" font-weight="800" font-size="7" letter-spacing="2" fill="#5B636E">SILVER</text></svg><span><small>Your level</small><b style="color:#5B636E">Silver</b></span></span></div>
+                <div class="mx-head"><span class="mx-badge" style="background:linear-gradient(135deg,#F0A21E,#B86E00)" aria-hidden="true"><svg width="20" height="20" viewBox="-32 -32 64 64"><path d="M0 -15 C9 -15 15 -8 15 0 C15 6 11 9 9 11 C8 12 7.5 13.5 7.5 15 H-7.5 C-7.5 13.5 -8 12 -9 11 C-11 9 -15 6 -15 0 C-15 -8 -9 -15 0 -15 Z" fill="#FFD978"/><rect x="-7" y="17" width="14" height="4" rx="2" fill="#fff"/><rect x="-5" y="22.5" width="10" height="3.5" rx="1.75" fill="#fff"/></svg></span><div><h3>Store health</h3><span>How brightly your store is shining today.</span></div><div class=mx-right><span class="rp-chip"><svg width="28" height="35" viewBox="0 0 200 250" role="img" aria-label="MerchLight Silver trophy"><defs><linearGradient id="b-silverdc" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7D8590"/><stop offset=".35" stop-color="#FFFFFF"/><stop offset=".6" stop-color="#C3C9D2"/><stop offset="1" stop-color="#7D8590"/></linearGradient><linearGradient id="r-silverdc" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#C3C9D2"/></linearGradient></defs><ellipse cx="100" cy="242" rx="72" ry="6" fill="#1A1D29" fill-opacity=".12"/><path d="M44 48 C10 48 12 104 56 110" fill="none" stroke="url(#b-silverdc)" stroke-width="10" stroke-linecap="round"/><path d="M156 48 C190 48 188 104 144 110" fill="none" stroke="url(#b-silverdc)" stroke-width="10" stroke-linecap="round"/><path d="M38 30 H162 V66 C162 112 134 140 100 140 C66 140 38 112 38 66 Z" fill="url(#b-silverdc)"/><ellipse cx="100" cy="30" rx="62" ry="9" fill="url(#r-silverdc)" stroke="#7D8590" stroke-opacity=".35"/><path d="M54 40 C52 80 62 110 80 126" stroke="#fff" stroke-opacity=".45" stroke-width="7" fill="none" stroke-linecap="round"/><circle cx="100" cy="80" r="26" fill="#7D8590" fill-opacity=".25" stroke="#FFFFFF" stroke-opacity=".8" stroke-width="2"/><path d="M0 -15 C9 -15 15 -8 15 0 C15 6 11 9 9 11 C8 12 7.5 13.5 7.5 15 H-7.5 C-7.5 13.5 -8 12 -9 11 C-11 9 -15 6 -15 0 C-15 -8 -9 -15 0 -15 Z" transform="translate(100 78) scale(.85)" fill="#FFFFFF"/><rect x="93.5" y="91" width="13" height="3.4" rx="1.7" fill="#FFFFFF"/><rect x="95.5" y="96" width="9" height="3" rx="1.5" fill="#FFFFFF"/><rect x="91" y="140" width="18" height="22" fill="url(#b-silverdc)"/><ellipse cx="100" cy="150" rx="16" ry="5" fill="url(#r-silverdc)"/><path d="M66 162 H134 L142 186 H58 Z" fill="url(#b-silverdc)"/><rect x="40" y="186" width="120" height="50" rx="6" fill="#fff" stroke="#1E2C78" stroke-opacity=".15"/><rect x="44" y="190" width="112" height="42" rx="4" fill="none" stroke="#C3C9D2" stroke-width="1.5"/><image href="/assets/merchlight-wordmark.svg" x="47" y="190" width="106" height="27"/><text x="100" y="229" text-anchor="middle" font-family="Nunito, sans-serif" font-weight="800" font-size="7" letter-spacing="2" fill="#5B636E">SILVER</text></svg><span><small>Your level</small><b style="color:#5B636E">Silver</b></span></span></div></div>
                 <div class="dl-health">
                   <svg width="90" height="90" viewBox="-32 -32 64 64" aria-hidden="true"><defs><linearGradient id="lp6290" x1="0" y1="1" x2="0" y2="0"><stop offset="0.62" stop-color="#F0A21E"/><stop offset="0.62" stop-color="#DDE0E7"/></linearGradient></defs><path d="M0 -15 C9 -15 15 -8 15 0 C15 6 11 9 9 11 C8 12 7.5 13.5 7.5 15 H-7.5 C-7.5 13.5 -8 12 -9 11 C-11 9 -15 6 -15 0 C-15 -8 -9 -15 0 -15 Z" fill="url(#lp6290)"/><rect x="-7" y="17" width="14" height="4" rx="2" fill="#8C92A0"/><rect x="-5" y="22.5" width="10" height="3.5" rx="1.75" fill="#8C92A0"/></svg>
                   <div><div class="dl-big">62<small> / 100</small></div><span class="pill warn">Needs attention</span> <span class="dl-up">↑ +8 since last scan</span><span class="rp-msg">Getting brighter — a few bulbs to change.</span></div>
@@ -115,82 +195,94 @@
                   <div class="lv here"><svg width="30" height="30" viewBox="-32 -32 64 64" aria-hidden="true"><defs><linearGradient id="lp6530" x1="0" y1="1" x2="0" y2="0"><stop offset="0.65" stop-color="#F0A21E"/><stop offset="0.65" stop-color="#DDE0E7"/></linearGradient></defs><path d="M0 -15 C9 -15 15 -8 15 0 C15 6 11 9 9 11 C8 12 7.5 13.5 7.5 15 H-7.5 C-7.5 13.5 -8 12 -9 11 C-11 9 -15 6 -15 0 C-15 -8 -9 -15 0 -15 Z" fill="url(#lp6530)"/><rect x="-7" y="17" width="14" height="4" rx="2" fill="#8C92A0"/><rect x="-5" y="22.5" width="10" height="3.5" rx="1.75" fill="#8C92A0"/></svg><span><b>Getting brighter</b><small>You are here</small></span></div>
                   <div class="lv"><svg width="30" height="30" viewBox="-32 -32 64 64" aria-hidden="true"><defs><linearGradient id="lp10030" x1="0" y1="1" x2="0" y2="0"><stop offset="1" stop-color="#F0A21E"/><stop offset="1" stop-color="#FFD978"/></linearGradient></defs><circle cx="0" cy="-1" r="22" fill="#FFD978" fill-opacity=".35"/><path d="M0 -24 V-30 M-17 -17 L-21 -21 M17 -17 L21 -21 M-23 -1 H-29 M23 -1 H29" stroke="#F0A21E" stroke-width="3.6" stroke-linecap="round"/><path d="M0 -15 C9 -15 15 -8 15 0 C15 6 11 9 9 11 C8 12 7.5 13.5 7.5 15 H-7.5 C-7.5 13.5 -8 12 -9 11 C-11 9 -15 6 -15 0 C-15 -8 -9 -15 0 -15 Z" fill="url(#lp10030)"/><rect x="-7" y="17" width="14" height="4" rx="2" fill="#8C92A0"/><rect x="-5" y="22.5" width="10" height="3.5" rx="1.75" fill="#8C92A0"/></svg><span><b>Glowing</b><small>80–100</small></span></div>
                 </div>
-                <div class="dl-subs">
-                  <div class="dl-sub"><svg width="34" height="34" viewBox="-32 -32 64 64" aria-hidden="true"><defs><linearGradient id="ds1" x1="0" y1="1" x2="0" y2="0"><stop offset="0.58" stop-color="#F0A21E"/><stop offset="0.58" stop-color="#DDE0E7"/></linearGradient></defs><path d="M0 -15 C9 -15 15 -8 15 0 C15 6 11 9 9 11 C8 12 7.5 13.5 7.5 15 H-7.5 C-7.5 13.5 -8 12 -9 11 C-11 9 -15 6 -15 0 C-15 -8 -9 -15 0 -15 Z" fill="url(#ds1)"/><rect x="-7" y="17" width="14" height="4" rx="2" fill="#8C92A0"/><rect x="-5" y="22.5" width="10" height="3.5" rx="1.75" fill="#8C92A0"/></svg><div><b>Store</b><span>Stock, SKUs, images, orders</span><span class="pill warn">Needs attention</span></div><strong>58<small> / 100</small></strong></div>
-                  <div class="dl-sub"><svg width="34" height="34" viewBox="-32 -32 64 64" aria-hidden="true"><defs><linearGradient id="ds2" x1="0" y1="1" x2="0" y2="0"><stop offset="0.66" stop-color="#F0A21E"/><stop offset="0.66" stop-color="#DDE0E7"/></linearGradient></defs><path d="M0 -15 C9 -15 15 -8 15 0 C15 6 11 9 9 11 C8 12 7.5 13.5 7.5 15 H-7.5 C-7.5 13.5 -8 12 -9 11 C-11 9 -15 6 -15 0 C-15 -8 -9 -15 0 -15 Z" fill="url(#ds2)"/><rect x="-7" y="17" width="14" height="4" rx="2" fill="#8C92A0"/><rect x="-5" y="22.5" width="10" height="3.5" rx="1.75" fill="#8C92A0"/></svg><div><b>Google Merchant</b><span>Shopping product approvals</span><span class="pill warn">Needs attention</span></div><strong>66<small> / 100</small></strong></div>
-                  <div class="dl-sub"><svg width="34" height="34" viewBox="-32 -32 64 64" aria-hidden="true"><defs><linearGradient id="ds3" x1="0" y1="1" x2="0" y2="0"><stop offset="0.84" stop-color="#F0A21E"/><stop offset="0.84" stop-color="#DDE0E7"/></linearGradient></defs><path d="M0 -15 C9 -15 15 -8 15 0 C15 6 11 9 9 11 C8 12 7.5 13.5 7.5 15 H-7.5 C-7.5 13.5 -8 12 -9 11 C-11 9 -15 6 -15 0 C-15 -8 -9 -15 0 -15 Z" fill="url(#ds3)"/><rect x="-7" y="17" width="14" height="4" rx="2" fill="#8C92A0"/><rect x="-5" y="22.5" width="10" height="3.5" rx="1.75" fill="#8C92A0"/></svg><div><b>Google Ads</b><span>ROAS 3.4× · last 30 days</span><span class="pill ok">Healthy</span></div><strong>84<small> / 100</small></strong></div>
-                  <div class="dl-sub"><svg width="34" height="34" viewBox="-32 -32 64 64" aria-hidden="true"><defs><linearGradient id="ds4" x1="0" y1="1" x2="0" y2="0"><stop offset="0.61" stop-color="#F0A21E"/><stop offset="0.61" stop-color="#DDE0E7"/></linearGradient></defs><path d="M0 -15 C9 -15 15 -8 15 0 C15 6 11 9 9 11 C8 12 7.5 13.5 7.5 15 H-7.5 C-7.5 13.5 -8 12 -9 11 C-11 9 -15 6 -15 0 C-15 -8 -9 -15 0 -15 Z" fill="url(#ds4)"/><rect x="-7" y="17" width="14" height="4" rx="2" fill="#8C92A0"/><rect x="-5" y="22.5" width="10" height="3.5" rx="1.75" fill="#8C92A0"/></svg><div><b>Meta Ads</b><span>ROAS 1.6× · early read</span><span class="pill warn">Needs attention</span></div><strong>61<small> / 100</small></strong></div>
+                
+                <div class="mx-subs">
+                  <div class="mx-sub" style="--band:#F0A21E"><span class="mx-sub-lamp"><svg width="34" height="34" viewBox="-32 -32 64 64" aria-hidden="true"><defs><linearGradient id="ds1" x1="0" y1="1" x2="0" y2="0"><stop offset="0.58" stop-color="#F0A21E"/><stop offset="0.58" stop-color="#DDE0E7"/></linearGradient></defs><path d="M0 -15 C9 -15 15 -8 15 0 C15 6 11 9 9 11 C8 12 7.5 13.5 7.5 15 H-7.5 C-7.5 13.5 -8 12 -9 11 C-11 9 -15 6 -15 0 C-15 -8 -9 -15 0 -15 Z" fill="url(#ds1)"/><rect x="-7" y="17" width="14" height="4" rx="2" fill="#8C92A0"/><rect x="-5" y="22.5" width="10" height="3.5" rx="1.75" fill="#8C92A0"/></svg></span><div><b><img src="/assets/icons/shopify.svg" alt="" width="20" height="20"> Store</b><span>Stock, product pages, orders</span><span class="pill warn">Needs attention</span></div><strong>58<small> / 100</small></strong></div>
+                  <div class="mx-sub" style="--band:#F0A21E"><span class="mx-sub-lamp"><svg width="34" height="34" viewBox="-32 -32 64 64" aria-hidden="true"><defs><linearGradient id="ds2" x1="0" y1="1" x2="0" y2="0"><stop offset="0.66" stop-color="#F0A21E"/><stop offset="0.66" stop-color="#DDE0E7"/></linearGradient></defs><path d="M0 -15 C9 -15 15 -8 15 0 C15 6 11 9 9 11 C8 12 7.5 13.5 7.5 15 H-7.5 C-7.5 13.5 -8 12 -9 11 C-11 9 -15 6 -15 0 C-15 -8 -9 -15 0 -15 Z" fill="url(#ds2)"/><rect x="-7" y="17" width="14" height="4" rx="2" fill="#8C92A0"/><rect x="-5" y="22.5" width="10" height="3.5" rx="1.75" fill="#8C92A0"/></svg></span><div><b><img src="/assets/icons/google-merchant.svg" alt="" width="20" height="20"> Google Merchant</b><span>Shopping product approvals</span><span class="pill warn">Needs attention</span></div><strong>66<small> / 100</small></strong></div>
+                  <div class="mx-sub" style="--band:#12B76A"><span class="mx-sub-lamp"><svg width="34" height="34" viewBox="-32 -32 64 64" aria-hidden="true"><defs><linearGradient id="ds3" x1="0" y1="1" x2="0" y2="0"><stop offset="0.84" stop-color="#F0A21E"/><stop offset="0.84" stop-color="#DDE0E7"/></linearGradient></defs><path d="M0 -15 C9 -15 15 -8 15 0 C15 6 11 9 9 11 C8 12 7.5 13.5 7.5 15 H-7.5 C-7.5 13.5 -8 12 -9 11 C-11 9 -15 6 -15 0 C-15 -8 -9 -15 0 -15 Z" fill="url(#ds3)"/><rect x="-7" y="17" width="14" height="4" rx="2" fill="#8C92A0"/><rect x="-5" y="22.5" width="10" height="3.5" rx="1.75" fill="#8C92A0"/></svg></span><div><b><img src="/assets/icons/google-ads.svg" alt="" width="20" height="20"> Google Ads</b><span>ROAS 3.4× · last 30 days</span><span class="pill ok">Healthy</span></div><strong>84<small> / 100</small></strong></div>
+                  <div class="mx-sub off" style="--band:#C9CED8"><span class="mx-sub-lamp"><svg width="34" height="34" viewBox="-32 -32 64 64" aria-hidden="true"><path d="M0 -15 C9 -15 15 -8 15 0 C15 6 11 9 9 11 C8 12 7.5 13.5 7.5 15 H-7.5 C-7.5 13.5 -8 12 -9 11 C-11 9 -15 6 -15 0 C-15 -8 -9 -15 0 -15 Z" fill="#DDE0E7"/><rect x="-7" y="17" width="14" height="4" rx="2" fill="#8C92A0"/><rect x="-5" y="22.5" width="10" height="3.5" rx="1.75" fill="#8C92A0"/></svg></span><div><b><img src="/assets/icons/meta.svg" alt="" width="20" height="20"> Meta Ads</b><span>Not connected</span><span class="pill neutral">Lights off</span></div><strong class="muted">—</strong></div>
                 </div>
               </div>
 
-              <div class="dl-card v3-move" id="callout-2">
+              <div class="mx-card" id="callout-2" style="--s:linear-gradient(90deg,#F0A21E,#12B76A)">
                 <span class="dl-marker" aria-hidden="true">2</span>
-                <div class="v3-move-top"><span class="v3-eyebrow">Your next best move</span><em>+10 points</em></div>
-                <b class="v3-move-title">Change 3 Merchant Center settings</b>
-                <span class="v3-sub">One settings change each fixes 433 products on Google.</span>
-                <span><span class="pill bad">High impact</span> <span class="pill ok">Quick win · ~2 min</span></span>
-                <span class="v3-btns"><span class="dl-run">Show me how</span><span class="dl-btn">Suggest another</span></span>
+                <div class="mx-head"><span class="mx-badge" style="background:linear-gradient(135deg,#F0A21E,#B86E00)" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg></span><div><h3>Your next best move</h3><span>The fix worth the most points for the least effort.</span></div></div>
+                <div class="mx-gold">
+                  <div class="mx-row-top"><b class="v3-move-title">Change 3 Merchant Center settings</b><span class="mx-pts">+10 points</span></div>
+                  <span class="v3-sub">One settings change each fixes 433 products on Google.</span>
+                  <span><span class="pill bad">High impact</span> <span class="pill ok">Quick win · ~2 min</span></span>
+                  <span class="mx-btns"><span class="mx-gold-btn">Show me how</span><span class="mx-ghost">Suggest another</span></span>
+                </div>
               </div>
 
-              <div class="dl-card" id="callout-3">
+              <div class="mx-card" id="callout-3" style="--s:linear-gradient(90deg,#3D55E0,#F0A21E,#12B76A)">
                 <span class="dl-marker" aria-hidden="true">3</span>
-                <div class="v3-head"><div><h3 class="v3-title">Your top priorities</h3><span class="v3-sub">Light up every bulb to reach 100.</span></div><em class="v3-left">+38 points left</em></div>
+                <div class="mx-head"><span class="mx-badge" style="background:linear-gradient(135deg,#3D55E0,#1E2C78)" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg></span><div><h3>Your top priorities</h3><span>Light up every bulb to reach 100.</span></div><div class=mx-right><em class="v3-left">+38 points left</em></div></div>
                 <div class="garland"><svg viewBox="0 0 700 30" preserveAspectRatio="none" aria-hidden="true"><path d="M0 6 Q 175 30 350 8 T 700 6" fill="none" stroke="#8C92A0" stroke-width="2"/></svg>
                   <div><span class="gb"><svg width="34" height="42" viewBox="-32 -36 64 72" aria-hidden="true"><rect x="-3" y="-36" width="6" height="12" rx="2" fill="#8C92A0"/><path d="M0 -15 C9 -15 15 -8 15 0 C15 6 11 9 9 11 C8 12 7.5 13.5 7.5 15 H-7.5 C-7.5 13.5 -8 12 -9 11 C-11 9 -15 6 -15 0 C-15 -8 -9 -15 0 -15 Z" transform="translate(0 4)" fill="#F1F2F5" stroke="#C3C7D1" stroke-width="2"/><text x="0" y="8" text-anchor="middle" font-size="12" font-weight="900" fill="#8C92A0">1</text></svg><small>+10</small></span><span class="gb"><svg width="34" height="42" viewBox="-32 -36 64 72" aria-hidden="true"><rect x="-3" y="-36" width="6" height="12" rx="2" fill="#8C92A0"/><path d="M0 -15 C9 -15 15 -8 15 0 C15 6 11 9 9 11 C8 12 7.5 13.5 7.5 15 H-7.5 C-7.5 13.5 -8 12 -9 11 C-11 9 -15 6 -15 0 C-15 -8 -9 -15 0 -15 Z" transform="translate(0 4)" fill="#F1F2F5" stroke="#C3C7D1" stroke-width="2"/><text x="0" y="8" text-anchor="middle" font-size="12" font-weight="900" fill="#8C92A0">2</text></svg><small>+8</small></span><span class="gb"><svg width="34" height="42" viewBox="-32 -36 64 72" aria-hidden="true"><rect x="-3" y="-36" width="6" height="12" rx="2" fill="#8C92A0"/><path d="M0 -15 C9 -15 15 -8 15 0 C15 6 11 9 9 11 C8 12 7.5 13.5 7.5 15 H-7.5 C-7.5 13.5 -8 12 -9 11 C-11 9 -15 6 -15 0 C-15 -8 -9 -15 0 -15 Z" transform="translate(0 4)" fill="#F1F2F5" stroke="#C3C7D1" stroke-width="2"/><text x="0" y="8" text-anchor="middle" font-size="12" font-weight="900" fill="#8C92A0">3</text></svg><small>+7</small></span><span class="gb"><svg width="34" height="42" viewBox="-32 -36 64 72" aria-hidden="true"><rect x="-3" y="-36" width="6" height="12" rx="2" fill="#8C92A0"/><path d="M0 -15 C9 -15 15 -8 15 0 C15 6 11 9 9 11 C8 12 7.5 13.5 7.5 15 H-7.5 C-7.5 13.5 -8 12 -9 11 C-11 9 -15 6 -15 0 C-15 -8 -9 -15 0 -15 Z" transform="translate(0 4)" fill="#F1F2F5" stroke="#C3C7D1" stroke-width="2"/><text x="0" y="8" text-anchor="middle" font-size="12" font-weight="900" fill="#8C92A0">4</text></svg><small>+4</small></span><span class="gb"><svg width="34" height="42" viewBox="-32 -36 64 72" aria-hidden="true"><rect x="-3" y="-36" width="6" height="12" rx="2" fill="#8C92A0"/><path d="M0 -15 C9 -15 15 -8 15 0 C15 6 11 9 9 11 C8 12 7.5 13.5 7.5 15 H-7.5 C-7.5 13.5 -8 12 -9 11 C-11 9 -15 6 -15 0 C-15 -8 -9 -15 0 -15 Z" transform="translate(0 4)" fill="#F1F2F5" stroke="#C3C7D1" stroke-width="2"/><text x="0" y="8" text-anchor="middle" font-size="12" font-weight="900" fill="#8C92A0">5</text></svg><small>+3</small></span><span class="gb"><svg width="34" height="42" viewBox="-32 -36 64 72" aria-hidden="true"><rect x="-3" y="-36" width="6" height="12" rx="2" fill="#8C92A0"/><circle cx="0" cy="2" r="22" fill="#FFD978" fill-opacity=".45"/><path d="M0 -15 C9 -15 15 -8 15 0 C15 6 11 9 9 11 C8 12 7.5 13.5 7.5 15 H-7.5 C-7.5 13.5 -8 12 -9 11 C-11 9 -15 6 -15 0 C-15 -8 -9 -15 0 -15 Z" transform="translate(0 4)" fill="#F0A21E" stroke="#F0A21E" stroke-width="2"/><text x="0" y="8" text-anchor="middle" font-size="12" font-weight="900" fill="#1A1D29">✓</text></svg><small class="ok">Done</small></span><span class="gb"><svg width="34" height="42" viewBox="-32 -36 64 72" aria-hidden="true"><rect x="-3" y="-36" width="6" height="12" rx="2" fill="#8C92A0"/><circle cx="0" cy="2" r="22" fill="#FFD978" fill-opacity=".45"/><path d="M0 -15 C9 -15 15 -8 15 0 C15 6 11 9 9 11 C8 12 7.5 13.5 7.5 15 H-7.5 C-7.5 13.5 -8 12 -9 11 C-11 9 -15 6 -15 0 C-15 -8 -9 -15 0 -15 Z" transform="translate(0 4)" fill="#F0A21E" stroke="#F0A21E" stroke-width="2"/><text x="0" y="8" text-anchor="middle" font-size="12" font-weight="900" fill="#1A1D29">✓</text></svg><small class="ok">Done</small></span></div></div>
-                <div class="pr"><span class="pn first">1</span><div><b>Change 3 Merchant Center settings</b><span><span class="pill bad">High impact</span> <span class="pill ok">Quick win · ~2 min</span></span></div><em>+10</em></div>
-                <div class="pr"><span class="pn">2</span><div><b>Fix 7 types of disapproved products</b><span><span class="pill bad">High impact</span> <span class="pill neutral">About 15 min</span></span></div><em>+8</em></div>
-                <div class="pr"><span class="pn">3</span><div><b>Ship 3 paid orders</b><span><span class="pill bad">High impact</span> <span class="pill neutral">About 10 min</span></span></div><em>+7</em></div>
+                <div class="mx-list">
+                  <div class="mx-pr"><span class="pn first">1</span><div><b>Change 3 Merchant Center settings</b><span><span class="pill bad">High impact</span> <span class="pill ok">Quick win · ~2 min</span></span></div><em>+10</em></div>
+                  <div class="mx-pr"><span class="pn">2</span><div><b>Fix 7 types of disapproved products</b><span><span class="pill bad">High impact</span> <span class="pill neutral">About 15 min</span></span></div><em>+8</em></div>
+                  <div class="mx-pr"><span class="pn">3</span><div><b>Ship 3 paid orders</b><span><span class="pill bad">High impact</span> <span class="pill neutral">About 10 min</span></span></div><em>+7</em></div>
+                </div>
+                <span class="mx-btns"><span class="mx-more"><i>⌄</i> Show all 9 priorities</span><span class="mx-navy">See all issues →</span></span>
               </div>
-              <div class="dl-card" id="callout-4">
+
+              <div class="mx-card" id="callout-4" style="--s:linear-gradient(90deg,#3D55E0,#8B5CF6,#FF5C7A)">
                 <span class="dl-marker" aria-hidden="true">4</span>
-                <div class="v3-head"><div><h3 class="v3-title">Ads</h3><span class="v3-sub">Last 7 days · reported by Google and Meta</span></div></div>
+                <div class="mx-head"><span class="mx-badge" style="background:linear-gradient(135deg,#3D55E0,#8B5CF6)" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24"><path d="M3 10v4h3l6 4V6L6 10H3z" fill="#fff"/><path d="M15 9.5a3.5 3.5 0 0 1 0 5M17.5 7a7 7 0 0 1 0 10" fill="none" stroke="#FFD978" stroke-width="2" stroke-linecap="round"/></svg></span><div><h3>Ads</h3><span>Last 7 days · reported by Google and Meta</span></div></div>
                 <div class="ad-plat">
-                  <div><b>Google Ads <span class="pill ok">Connected</span></b>
-                    <div class="ad-stats"><span>ROAS<strong>3.1×</strong></span><span>Active campaigns<strong>3</strong></span><span>Amount spent<strong>£412</strong></span><span>Conversions / sales<strong>37 / £1,280</strong></span></div>
-                    <div class="ad-drop">Active campaigns (3) <span>⌄</span></div>
+                  <div class="mx-outline"><b><img src="/assets/icons/google-ads.svg" alt="" width="20" height="20"> Google Ads <span class="pill ok">Connected</span></b>
+                    <div class="mx-kpis"><span class="k-green">ROAS<strong>3.1×</strong></span><span class="k-blue">Active campaigns<strong>3</strong></span><span class="k-amber">Amount spent<strong>£412</strong></span><span class="k-pink">Conversions / sales<strong>37 / £1,280</strong></span></div>
                   </div>
-                  <div><b>Meta Ads <span class="pill ok">Connected</span></b>
-                    <div class="ad-stats"><span>ROAS<strong>1.6×</strong></span><span>Active campaigns<strong>2</strong></span><span>Amount spent<strong>£260</strong></span><span>Purchases / sales<strong>14 / £416</strong></span></div>
-                    <div class="ad-drop">Active campaigns (2) <span>⌄</span></div>
+                  <div class="mx-outline mx-off"><b><img src="/assets/icons/meta.svg" alt="" width="20" height="20"> Meta Ads <span class="pill neutral">Not connected</span></b>
+                    <p class="mx-offtext">Connect Meta Ads to see Facebook and Instagram campaigns next to your store.</p><span class="mx-navy sm">Connect Meta Ads</span>
                   </div>
                 </div>
               </div>
             </div>
 
             <div class="dl-side">
-              <div class="dl-card dl-setup">
-                <h3>Get set up <em>4 of 5 done</em></h3>
-                <div class="dl-progress"><span style="width:80%"></span></div>
-                <ul class="dl-steps">
-                  <li class="done"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg> Run your first scan</li>
-                  <li class="done"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg> Connect Google Merchant Center</li>
-                  <li class="done"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg> Connect Google Ads <i class="dl-opt" style="border:0;width:auto;height:auto">Optional</i></li>
-                  <li class="done"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg> Connect Meta Ads <i class="dl-opt" style="border:0;width:auto;height:auto">Optional</i></li>
-                  <li class="next">Resolve your first issue<span style="font-weight:400;color:var(--muted);font-size:.8rem">Open the top priority and follow the guidance.</span></li>
-                </ul>
+              <div class="mx-card" style="--s:linear-gradient(90deg,#3D55E0,#12B76A)">
+                <div class="mx-head"><span class="mx-badge" style="background:linear-gradient(135deg,#3D55E0,#1E2C78)" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg></span><div><h3>Get set up</h3><span>Get MerchLight ready to work for you.</span></div><div class=mx-right><span class="mx-count">3 of 5</span></div></div>
+                <div class="mx-track"><span style="width:60%"></span></div>
+                <div class="mx-list">
+                  <div class="mx-row done"><span class="mx-check">✓</span><b>Run your first scan</b></div>
+                  <div class="mx-row done"><span class="mx-logo"><img src="/assets/icons/google-merchant.svg" alt="" width="20" height="20"></span><b>Connect Google Merchant Center</b><span class="mx-ok">● Connected</span></div>
+                  <div class="mx-row done"><span class="mx-logo"><img src="/assets/icons/google-ads.svg" alt="" width="20" height="20"></span><b>Connect Google Ads</b><span class="mx-ok">● Connected</span></div>
+                  <div class="mx-row"><span class="mx-logo"><img src="/assets/icons/meta.svg" alt="" width="20" height="20"></span><b>Connect Meta Ads<small>Optional</small></b><span class="mx-act"><span class="mx-skip">Not relevant</span><span class="mx-navy sm">Connect</span></span></div>
+                  <div class="mx-row next"><span class="mx-ring"></span><div><b>Resolve your first issue</b><small>Open the top priority and follow the guidance.</small></div></div>
+                </div>
               </div>
-              <div class="dl-risk">
-                <span class="dl-eyebrow">Sales at risk this month</span>
-                <span class="dl-money">≈ £1,240</span>
-                <p>Your best-seller <b>Seamless leggings — Black</b> is out of stock. Estimated from the last 30 days of sales.</p>
-                <span class="dl-amber">Restock in Shopify <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></span>
+              <div class="mx-risk">
+                <div class="mx-head"><span class="mx-badge" style="background:linear-gradient(135deg,#FF8A5C,#F04438)" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg></span><div><h3>Sales at risk</h3><span>This month, from your real sales</span></div></div>
+                <div class="mx-risk-in">
+                  <span class="dl-money">≈ £1,240</span>
+                  <p>Your best-seller <b>Seamless leggings — Black</b> is out of stock. Estimated from the last 30 days of sales.</p>
+                  <span class="mx-gold-btn">Restock in Shopify <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></span>
+                </div>
               </div>
-              <div class="dl-card">
-                <h3>Your level</h3>
-                <div class="v3-level"><svg width="70" height="88" viewBox="0 0 200 250" role="img" aria-label="MerchLight Silver trophy"><defs><linearGradient id="b-silverdl" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7D8590"/><stop offset=".35" stop-color="#FFFFFF"/><stop offset=".6" stop-color="#C3C9D2"/><stop offset="1" stop-color="#7D8590"/></linearGradient><linearGradient id="r-silverdl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#C3C9D2"/></linearGradient></defs><ellipse cx="100" cy="242" rx="72" ry="6" fill="#1A1D29" fill-opacity=".12"/><path d="M44 48 C10 48 12 104 56 110" fill="none" stroke="url(#b-silverdl)" stroke-width="10" stroke-linecap="round"/><path d="M156 48 C190 48 188 104 144 110" fill="none" stroke="url(#b-silverdl)" stroke-width="10" stroke-linecap="round"/><path d="M38 30 H162 V66 C162 112 134 140 100 140 C66 140 38 112 38 66 Z" fill="url(#b-silverdl)"/><ellipse cx="100" cy="30" rx="62" ry="9" fill="url(#r-silverdl)" stroke="#7D8590" stroke-opacity=".35"/><path d="M54 40 C52 80 62 110 80 126" stroke="#fff" stroke-opacity=".45" stroke-width="7" fill="none" stroke-linecap="round"/><circle cx="100" cy="80" r="26" fill="#7D8590" fill-opacity=".25" stroke="#FFFFFF" stroke-opacity=".8" stroke-width="2"/><path d="M0 -15 C9 -15 15 -8 15 0 C15 6 11 9 9 11 C8 12 7.5 13.5 7.5 15 H-7.5 C-7.5 13.5 -8 12 -9 11 C-11 9 -15 6 -15 0 C-15 -8 -9 -15 0 -15 Z" transform="translate(100 78) scale(.85)" fill="#FFFFFF"/><rect x="93.5" y="91" width="13" height="3.4" rx="1.7" fill="#FFFFFF"/><rect x="95.5" y="96" width="9" height="3" rx="1.5" fill="#FFFFFF"/><rect x="91" y="140" width="18" height="22" fill="url(#b-silverdl)"/><ellipse cx="100" cy="150" rx="16" ry="5" fill="url(#r-silverdl)"/><path d="M66 162 H134 L142 186 H58 Z" fill="url(#b-silverdl)"/><rect x="40" y="186" width="120" height="50" rx="6" fill="#fff" stroke="#1E2C78" stroke-opacity=".15"/><rect x="44" y="190" width="112" height="42" rx="4" fill="none" stroke="#C3C9D2" stroke-width="1.5"/><image href="/assets/merchlight-wordmark.svg" x="47" y="190" width="106" height="27"/><text x="100" y="229" text-anchor="middle" font-family="Nunito, sans-serif" font-weight="800" font-size="7" letter-spacing="2" fill="#5B636E">SILVER</text></svg><div><b style="color:#5B636E">Silver</b><span class="v3-sub">Next: Gold</span><div class="dl-progress"><span style="width:40%;background:linear-gradient(90deg,#F0A21E,#FFD978)"></span></div><span class="v3-sub">Score 80+ for 30 days · 12 of 30 days</span></div></div>
+              <div class="mx-card" style="--s:linear-gradient(90deg,#B8732E,#F6C48B,#B8732E)">
+                <div class="mx-head"><span class="mx-badge" style="background:linear-gradient(135deg,#C98A4B,#8A4B12)" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 4h10v5a5 5 0 0 1-10 0zM7 6H4a3 3 0 0 0 3 4M17 6h3a3 3 0 0 1-3 4M12 14v4M8 21h8"/></svg></span><div><h3>Your level</h3><span>Keep your score up to earn the next trophy.</span></div></div>
+                <div class="v3-level"><svg width="70" height="88" viewBox="0 0 200 250" role="img" aria-label="MerchLight Silver trophy"><defs><linearGradient id="b-silverdl" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7D8590"/><stop offset=".35" stop-color="#FFFFFF"/><stop offset=".6" stop-color="#C3C9D2"/><stop offset="1" stop-color="#7D8590"/></linearGradient><linearGradient id="r-silverdl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#C3C9D2"/></linearGradient></defs><ellipse cx="100" cy="242" rx="72" ry="6" fill="#1A1D29" fill-opacity=".12"/><path d="M44 48 C10 48 12 104 56 110" fill="none" stroke="url(#b-silverdl)" stroke-width="10" stroke-linecap="round"/><path d="M156 48 C190 48 188 104 144 110" fill="none" stroke="url(#b-silverdl)" stroke-width="10" stroke-linecap="round"/><path d="M38 30 H162 V66 C162 112 134 140 100 140 C66 140 38 112 38 66 Z" fill="url(#b-silverdl)"/><ellipse cx="100" cy="30" rx="62" ry="9" fill="url(#r-silverdl)" stroke="#7D8590" stroke-opacity=".35"/><path d="M54 40 C52 80 62 110 80 126" stroke="#fff" stroke-opacity=".45" stroke-width="7" fill="none" stroke-linecap="round"/><circle cx="100" cy="80" r="26" fill="#7D8590" fill-opacity=".25" stroke="#FFFFFF" stroke-opacity=".8" stroke-width="2"/><path d="M0 -15 C9 -15 15 -8 15 0 C15 6 11 9 9 11 C8 12 7.5 13.5 7.5 15 H-7.5 C-7.5 13.5 -8 12 -9 11 C-11 9 -15 6 -15 0 C-15 -8 -9 -15 0 -15 Z" transform="translate(100 78) scale(.85)" fill="#FFFFFF"/><rect x="93.5" y="91" width="13" height="3.4" rx="1.7" fill="#FFFFFF"/><rect x="95.5" y="96" width="9" height="3" rx="1.5" fill="#FFFFFF"/><rect x="91" y="140" width="18" height="22" fill="url(#b-silverdl)"/><ellipse cx="100" cy="150" rx="16" ry="5" fill="url(#r-silverdl)"/><path d="M66 162 H134 L142 186 H58 Z" fill="url(#b-silverdl)"/><rect x="40" y="186" width="120" height="50" rx="6" fill="#fff" stroke="#1E2C78" stroke-opacity=".15"/><rect x="44" y="190" width="112" height="42" rx="4" fill="none" stroke="#C3C9D2" stroke-width="1.5"/><image href="/assets/merchlight-wordmark.svg" x="47" y="190" width="106" height="27"/><text x="100" y="229" text-anchor="middle" font-family="Nunito, sans-serif" font-weight="800" font-size="7" letter-spacing="2" fill="#5B636E">SILVER</text></svg><div><b style="color:#5B636E">Silver</b><span class="v3-sub">Next: Gold</span><div class="mx-track gold"><span style="width:40%"></span></div><span class="v3-sub">Score 80+ for 30 days · 12 of 30 days</span></div></div>
+                <div class="mx-trophies"><span>Bronze</span><span class="me">Silver</span><span>Gold</span><span>Diamond</span></div>
               </div>
-              <div class="dl-card">
-                <h3>Speed &amp; trust</h3>
-                <p class="dl-conn">Home page on a phone <span class="pill warn">62 · could be faster</span></p>
-                <p class="dl-conn">Collection page <span class="pill ok">71 · fast</span></p>
-                <p class="dl-conn">Best-seller page <span class="pill ok">78 · fast</span></p>
-                <p class="dl-conn">Trust pages <span class="pill ok">6 of 7 found</span></p>
+              <div class="mx-card" style="--s:linear-gradient(90deg,#12B76A,#3D55E0)">
+                <div class="mx-head"><span class="mx-badge" style="background:linear-gradient(135deg,#12B76A,#067647)" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.3" stroke-linecap="round"><path d="M4 16a8 8 0 0 1 16 0"/><path d="M12 16l4-5"/></svg></span><div><h3>Speed &amp; trust</h3><span>How fast your pages open on a phone.</span></div></div>
+                <div class="mx-list">
+                  <div class="mx-line">Home page on a phone <span class="pill warn">62 · could be faster</span></div>
+                  <div class="mx-line">Collection page <span class="pill ok">71 · fast</span></div>
+                  <div class="mx-line">Best-seller page <span class="pill ok">78 · fast</span></div>
+                  <div class="mx-line">Trust pages <span class="pill ok">6 of 7 found</span></div>
+                </div>
               </div>
-              <div class="dl-card">
-                <h3>Connections</h3>
-                <p class="dl-conn">Google Merchant Center <span class="pill ok">Connected</span></p>
-                <p class="dl-conn">Google Ads <span class="pill ok">Connected</span></p>
-                <p class="dl-conn">Meta Ads <span class="pill ok">Connected</span></p>
+              <div class="mx-card" style="--s:linear-gradient(90deg,#3D55E0,#8B5CF6,#FF5C7A)">
+                <div class="mx-head"><span class="mx-badge" style="background:linear-gradient(135deg,#3D55E0,#8B5CF6)" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 7V3M15 7V3M7 7h10v4a5 5 0 0 1-10 0zM12 16v5"/></svg></span><div><h3>Connections</h3><span>The accounts MerchLight reads.</span></div></div>
+                <div class="mx-list">
+                  <div class="mx-row"><span class="mx-logo"><img src="/assets/icons/google-merchant.svg" alt="" width="20" height="20"></span><b>Google Merchant Center</b><span class="mx-ok">● Connected</span></div>
+                  <div class="mx-row"><span class="mx-logo"><img src="/assets/icons/google-ads.svg" alt="" width="20" height="20"></span><b>Google Ads</b><span class="mx-ok">● Connected</span></div>
+                  <div class="mx-row"><span class="mx-logo"><img src="/assets/icons/meta.svg" alt="" width="20" height="20"></span><b>Meta Ads</b><span class="mx-navy sm">Connect</span></div>
+                </div>
               </div>
             </div>
           </div>
@@ -236,22 +328,17 @@
             <li><b>No spend, no penalty</b> — when your ads aren't running, the lights stay off and your score isn't affected.</li>
           </ul>
         </div>
-        <div class="dl-card dl-issue" aria-label="Example of the Ads page">
+        <div class="dl-card dl-issue mx-adspage" aria-label="Example of the Ads page">
           <div class="ad-top">
-            <div class="ad-tabs"><span class="on">Google Ads · Connected</span><span>Meta Ads · Connected</span></div>
-            <div class="ad-periods"><span>Today</span><span class="on">7 days</span><span>30 days</span><span>Custom</span></div>
+            <div class="ad-tabs"><span class="mx-chan on"><img src="/assets/icons/google-ads.svg" alt="" width="20" height="20"> Google Ads <i>Connected</i></span><span class="mx-chan"><img src="/assets/icons/meta.svg" alt="" width="20" height="20"> Meta Ads</span></div>
+            <div class="mx-seg"><span>Today</span><span class="on">7 days</span><span>30 days</span><span>Custom</span></div>
           </div>
-          <div class="ad-kpis">
-            <span>Active campaigns<strong>3</strong></span>
-            <span>Spend<strong>£412</strong></span>
-            <span>Conversions<strong>37</strong></span>
-            <span>ROAS<strong>3.1×</strong></span>
-          </div>
-          <div class="ad-filters"><b style="font-size:.85rem">Campaigns</b><div class="ad-periods"><span class="on">Active (3)</span><span>Paused (4)</span><span>Removed (1)</span><span>All (8)</span></div></div>
+          <div class="mx-kpis four"><span class="k-blue">Active campaigns<strong>3</strong></span><span class="k-amber">Spend<strong>£412</strong></span><span class="k-pink">Conversions<strong>37</strong></span><span class="k-green">ROAS<strong>3.1×</strong></span></div>
+          <div class="ad-filters"><b style="font-size:.85rem">Campaigns</b><div class="mx-seg"><span class="on">Active <i>3</i></span><span>Paused <i>4</i></span><span>Removed <i>1</i></span><span>All <i>8</i></span></div></div>
           <div class="ad-row th"><span>Campaign</span><span>Status</span><span>Budget</span><span>Spend</span><span>Conv.</span><span>ROAS</span></div>
-          <div class="ad-row"><a>PMax – Leggings <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a><span><span class="pill ok">Active</span></span><span>£25</span><span>£231</span><span>24</span><b>3.6×</b></div>
-          <div class="ad-row"><a>Shopping – Sports bras <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a><span><span class="pill warn">Limited</span></span><span>£12</span><span>£84</span><span>9</span><b>3.0×</b></div>
-          <div class="ad-row"><a>Search – Brand <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a><span><span class="pill ok">Active</span></span><span>£15</span><span>£97</span><span>4</span><b>1.9×</b></div>
+          <div class="ad-row mx-camp"><a>PMax – Leggings <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a><span><span class="pill ok">Active</span></span><span>£25</span><span>£231</span><span>24</span><b>3.6×</b></div>
+          <div class="ad-row mx-camp"><a>Shopping – Sports bras <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a><span><span class="pill warn">Limited</span></span><span>£12</span><span>£84</span><span>9</span><b>3.0×</b></div>
+          <div class="ad-row mx-camp"><a>Search – Brand <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a><span><span class="pill ok">Active</span></span><span>£15</span><span>£97</span><span>4</span><b>1.9×</b></div>
         </div>
       </div>
     </section>
