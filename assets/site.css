@@ -369,3 +369,18 @@ html,body{overflow-x:clip}
 .price-notes{padding-top:24px}
 .price-notes h2{font-family:var(--display);font-weight:900;font-size:1.8rem;color:var(--night);margin:0 0 20px}
 @media (max-width:900px){.plans{grid-template-columns:1fr;max-width:520px;margin:0 auto}.plan-tag{min-height:0}}
+
+/* Nov 2026: home report in the app's current card style (stripe, outlined tiles with band, gold move box, outlined rows). */
+.report{overflow:hidden}
+.report::before{content:"";position:absolute;inset:0 0 auto 0;height:5px;background:linear-gradient(90deg,#F0A21E,#FF5C7A)}
+.rp-subs span{border-left:5px solid var(--band,#C9CED8);border-radius:12px}
+.rp-subs span.off{border-style:dashed;border-left-style:solid}
+.rp-subs small{display:flex;align-items:center;gap:4px}
+.rp-subs small img{flex:none}
+.rp-risk{position:relative;background:radial-gradient(120% 90% at 100% 0%,#3D55E0 0%,#1E2C78 55%,#14213D 100%);overflow:hidden;padding-top:14px}
+.rp-risk::before{content:"";position:absolute;inset:0 0 auto 0;height:3px;background:linear-gradient(90deg,#F0A21E,#FF5C7A)}
+.rp-risk strong{color:#FFD978}
+.rp-move{border:1.5px solid #F0A21E;background:#FFFBF2;box-shadow:0 10px 24px -18px rgba(240,162,30,.9)}
+.rp-move-tags .pts{font-size:.8rem;background:#E3F6EC;border-radius:999px;padding:3px 10px}
+.report .issue{border:1px solid var(--line);border-radius:12px;padding:9px 12px;margin-top:8px}
+.report .rp-prio-head{border-top:0;padding-top:4px}
