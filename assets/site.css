@@ -39,6 +39,7 @@ img{max-width:100%;display:block}
 .stage{position:relative;padding:40px 0 0}
 .beam{position:absolute;left:-60px;right:-60px;top:-90px;height:140%;background:radial-gradient(42% 46% at 58% 26%,rgba(255,217,120,.55),rgba(240,162,30,.14) 50%,rgba(240,162,30,0) 72%);pointer-events:none}
 .lamp{position:absolute;top:-6px;left:58%;width:54px;height:54px}
+.report.report-img{padding:14px;display:flex;flex-direction:column;gap:12px}.report-img img{display:block;width:100%;height:auto;border-radius:14px}
 .report{position:relative;background:var(--white);border:1px solid var(--line);border-radius:var(--radius-lg);padding:26px;box-shadow:0 30px 60px -30px rgba(20,33,61,.35)}
 .report h2{font-family:var(--display);font-size:1.05rem;font-weight:800;margin:0 0 16px;color:var(--night)}
 .scores{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:18px}

@@ -154,6 +154,7 @@ footer{border-top:1px solid var(--line);padding:28px 16px 40px}
 .foot img{height:34px;width:34px;border-radius:9px}
 .foot .brand{display:flex;align-items:center;gap:10px;font:800 16px var(--display);color:var(--ink)}
 code{font:600 14px ui-monospace,"Cascadia Mono",monospace;background:var(--card);border:1px solid var(--line);border-radius:6px;padding:1px 6px}
+.g-shot{margin:6px 0 18px}.g-shot img{display:block;width:100%;max-width:720px;height:auto;border-radius:14px;box-shadow:0 6px 18px -10px rgba(20,33,61,.35)}.g-shot figcaption{font-size:.85rem;color:#5C6066;margin-top:8px}
 </style>
 <link rel="stylesheet" href="/assets/signin.css">
 </head>
@@ -343,13 +344,16 @@ code{font:600 14px ui-monospace,"Cascadia Mono",monospace;background:var(--card)
     <section class="ch" id="overview">
       <div class="ch-head"><span class="ch-num">04</span><h2>The Overview page</h2>
         <p>Your home screen: how the store is doing today and the one thing to do next.</p></div>
+      <figure class="g-shot"><img src="/assets/screens/health.webp" width="720" height="458" alt="The Store health card on the Overview" loading="lazy"><figcaption>Store health: the lamp lights the card, your score in gold, and one row per channel with its own lamp.</figcaption></figure>
       <div class="grid2">
         <div class="card"><h4>Since your last visit</h4><p>How many times MerchLight checked while you were away, new issues, resolved issues and score change, counting only what changed in your store.</p></div>
-        <div class="card"><h4>Store health</h4><p>The lamp, your score, its change since the last scan, a 7-day trend line and your light level. While a scan runs, the lamp blinks until the final score is ready.</p></div>
+        <div class="card"><h4>Store health</h4><p>The lamp, your score, its change since the last scan, a 7-day trend line and your light level, plus one row for each channel (Store, Google Merchant Center, Google Ads, Meta Ads) with a short bar and its own lamp. A channel with no ad spend shows “Lights off” and doesn't count. While a scan runs, the lamp blinks until the final score is ready.</p></div>
         <div class="card"><h4>Your next best move</h4><p>The problem worth the most points for the least effort. Press “Show me how”, or “Suggest another” for a different one.</p></div>
         <div class="card"><h4>Your top priorities</h4><p>Every open problem as a bulb on a garland, with its points, impact and time to fix. Mark one “I'm on it” to track it in progress.</p></div>
         <div class="card"><h4>Sales at risk</h4><p>Past sales of products that are now out of stock, plus paid orders waiting to ship. If nothing is at risk, it shows your best-seller instead.</p></div>
-        <div class="card"><h4>Your level</h4><p>Trophies earned by keeping your score up, day after day. See below.</p></div>
+        <div class="card"><h4>Your level</h4><p>Trophies earned by keeping your score up, day after day. The card glows in your trophy's colour; hover another trophy to preview it. See below.</p></div>
+        <div class="card"><h4>Connections</h4><p>Which accounts MerchLight reads (Google Merchant Center, Google Ads, Meta Ads), with a button to reconnect or choose an account when one needs attention.</p></div>
+        <div class="card"><h4>Before you open your store</h4><p>Only while your store is password-protected: a checklist of trust pages and buying helpers to get ready before you remove the password. It doesn't count in your score.</p></div>
         <div class="card"><h4>Speed &amp; Trust</h4><p>Your phone speed score for the home page, a collection and a product page, with what slows each slower page down, which trust pages your store has (and a size guide, for clothing and shoes), and how many conversion boosters you use.</p></div>
         <div class="card"><h4>Ads</h4><p>ROAS, spend and conversions for Google Ads and Meta Ads, for the period you chose: 7, 15 or 30 days. Switch it any time on the card; your ads score follows the same period.</p></div>
         <div class="card"><h4>Abandoned checkouts</h4><p>How many shoppers left at the checkout in the last 30 days, the value they left behind, how many came back and paid, who sends the reminder emails, and the products abandoned most. Only numbers: never who the shoppers are.</p></div>
