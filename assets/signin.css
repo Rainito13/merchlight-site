@@ -24,3 +24,15 @@
 /* O menu e a lâmpada ficam juntos à direita do logótipo. */
 .top > nav,.sitebar-in > nav{margin-left:auto}
 @media (max-width:560px){.top .ml-signin{order:1}.top > nav{order:2}}
+
+/* Instagram: atalho no topo (ao lado da lâmpada) e no rodapé. */
+.ml-ig{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:#fff;border:2px solid #DDE3F3;color:#8C92A0;margin-left:18px;transition:border-color .2s,color .2s,box-shadow .2s;flex:none}
+.ml-ig:hover{border-color:#E1306C;color:#E1306C;box-shadow:0 8px 20px -12px rgba(225,48,108,.9)}
+.ml-ig:focus-visible{outline:3px solid #F0A21E;outline-offset:3px}
+.ml-ig + .ml-signin{margin-left:10px}
+.ml-ig-foot{display:inline-flex;align-items:center;gap:6px;font-weight:700}
+.ml-ig-foot:hover{color:#E1306C}
+@media (max-width:560px){.top .ml-ig{order:1;margin-left:auto}.top .ml-ig + .ml-signin{margin-left:10px}}
+.sitebar a.ml-ig{color:#8C92A0}
+.sitebar a.ml-ig:hover{color:#E1306C}
+.sitebar-in .ml-ig + .ml-signin{margin-left:-6px}
